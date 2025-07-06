@@ -12,7 +12,7 @@
   <style>
     body {
       margin: 0;
-      padding: 2rem;
+      padding: 0;
       background-color: #000;
       color: #fff;
       font-family: Arial, sans-serif;
@@ -22,6 +22,28 @@
       min-height: 100vh;
     }
 
+    nav {
+      width: 100%;
+      background-color: #111;
+      display: flex;
+      justify-content: center;
+      padding: 1rem 0;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin: 0 1.5rem;
+      font-weight: bold;
+      text-transform: uppercase;
+      transition: color 0.3s;
+    }
+
+    nav a:hover {
+      color: #ccc;
+    }
+
     .container {
       background-color: #fff;
       color: #000;
@@ -29,6 +51,7 @@
       border-radius: 10px;
       max-width: 900px;
       width: 100%;
+      margin: 2rem 0;
       box-shadow: 0 0 15px rgba(255, 255, 255, 0.1);
     }
 
@@ -110,10 +133,18 @@
 </head>
 <body>
 
-  <!-- Bild mit eingebautem CSS zur Größenänderung -->
-  <img src="logo.png" alt="FC Kiischpelt Logo" style="width: 300px; height: auto; margin-bottom: 2rem;" />
+  <!-- Navigation -->
+  <nav>
+    <a href="#home">Home</a>
+    <a href="https://www.facebook.com/fckiischpelt" target="_blank">Facebook</a>
+    <a href="#kalender">Kalender</a>
+    <a href="#sponsoren">Sponsoren</a>
+  </nav>
 
-  <div class="container">
+  <!-- Bild -->
+  <img src="logo.png" alt="FC Kiischpelt Logo" style="width: 300px; height: auto; margin-top: 2rem;" />
+
+  <div class="container" id="home">
     <div class="title">DAUERKAART / ABO SAISON 25/26 – MAIL</div>
 
     <div class="info-boxes">
@@ -137,7 +168,6 @@
       </div>
     </div>
 
-    <!-- Neue Mailadresse-Anzeige -->
     <div class="email-box">
       Mail: dauerkaart@fckw.lu
     </div>
@@ -147,6 +177,17 @@
         DAUERKAART BESTELLEN / COMMANDER L'ABONNEMENT
       </a>
     </div>
+  </div>
+
+  <!-- Beispielsektionen für Kalender und Sponsoren -->
+  <div class="container" id="kalender">
+    <div class="title">Kalender</div>
+    <p>Hier könnte der Spielkalender stehen...</p>
+  </div>
+
+  <div class="container" id="sponsoren">
+    <div class="title">Sponsoren</div>
+    <p>Hier könnten Sponsorenlogos und Infos platziert werden...</p>
   </div>
 
 </body>
