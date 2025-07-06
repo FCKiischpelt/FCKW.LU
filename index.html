@@ -1,17 +1,71 @@
-<!-- Navigation -->
-<nav>
-  <a href="/">
-    <img src="logo.png" alt="FC Kiischpelt Logo" />
-  </a>
-  <div class="nav-links">
+<!DOCTYPE html>
+<html lang="lb">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>FC Kiischpelt - Home</title>
+  <style>
+    body {
+      margin: 0;
+      background-color: #000;
+      color: #fff;
+      font-family: Arial, sans-serif;
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
+    }
+    nav {
+      width: 100%;
+      background-color: #111;
+      padding: 1rem 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 2rem;
+      flex-wrap: wrap;
+    }
+    nav a {
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+      text-transform: uppercase;
+      font-size: 1rem;
+      transition: color 0.3s;
+    }
+    nav a:hover {
+      color: #ccc;
+    }
+    .nav-logo {
+      height: 40px;
+      cursor: pointer;
+      vertical-align: middle;
+    }
+    .main-content {
+      flex: 1;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 2rem;
+    }
+    .main-content img {
+      max-width: 90%;
+      height: auto;
+    }
+  </style>
+</head>
+<body>
+  <nav>
     <a href="/">Home</a>
     <a href="/dauerkarte">Dauerkarte</a>
+    <a href="/">
+      <img src="logo.png" alt="FC Kiischpelt Logo" class="nav-logo" />
+    </a>
     <a href="/facebook">Facebook</a>
     <a href="/sponsoren">Sponsoren</a>
-  </div>
-</nav>
+  </nav>
 
-<!-- Startseiteninhalt -->
-<div class="container" style="text-align:center">
-  <img src="logo.png" alt="FC Kiischpelt Logo" style="width: 300px; height: auto; margin-top: 4rem;" />
-</div>
+  <div class="main-content">
+    <img src="logo.png" alt="FC Kiischpelt Großes Logo" />
+  </div>
+</body>
+</html>
