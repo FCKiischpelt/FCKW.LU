@@ -3,16 +3,19 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Sponsoren – FC KIISCHPELT WËLWERWOLZ</title>
+  <title>FC Kiischpelt - Home</title>
   <style>
     body {
       margin: 0;
       background-color: #000;
       color: #fff;
       font-family: Arial, sans-serif;
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
     }
 
-    /* Navbar Styles */
+    /* Navigation Styles */
   .navbar {
   width: 100%;
   background-color: #111;
@@ -90,6 +93,20 @@
     display: flex;
   }
 }
+
+    /* Main content */
+    .main-content {
+      flex: 1;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 2rem;
+    }
+
+    .main-content img {
+      max-width: 300px;
+      height: auto;
+    }
   </style>
 </head>
 <body>
@@ -114,16 +131,14 @@
 </div>
 </nav>
 
-  <!-- Main Content -->
-  <div class="container">
-    <h1>Steckbrief – FC KIISCHPELT WËLWERWOLZ</h1>
-    <p>Inhalte folgen...</p>
+  <div class="main-content">
+    <img src="logo.png" alt="FC Kiischpelt Großes Logo" />
   </div>
 
-  <!-- Navigation Toggle Script -->
   <script>
-    function toggleNav() {
-      document.getElementById("navLinks").classList.toggle("show");
+    function toggleMenu() {
+      const nav = document.getElementById('navLinks');
+      nav.classList.toggle('active');
     }
   </script>
 
