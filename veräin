@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="lb">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Sponsoren – FC KIISCHPELT WËLWERWOLZ</title>
+  <style>
+    body {
+      margin: 0;
+      background-color: #000;
+      color: #fff;
+      font-family: Arial, sans-serif;
+    }
+
+    /* Navbar Styles */
+  .navbar {
+  width: 100%;
+  background-color: #111;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  box-sizing: border-box;
+  flex-wrap: wrap;
+  position: relative;
+  z-index: 1000;
+}
+
+.nav-logo {
+  height: 40px;
+  cursor: pointer;
+  flex-shrink: 0;
+}
+
+.nav-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  align-items: center;
+  justify-content: flex-end;
+  flex-grow: 1;
+}
+
+.nav-links a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  text-transform: uppercase;
+  font-size: 1rem;
+  transition: color 0.3s;
+  white-space: nowrap;
+}
+
+.nav-links a:hover {
+  color: #ccc;
+}
+
+/* Mobile Optimierung */
+.hamburger {
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
+  gap: 5px;
+}
+
+.hamburger div {
+  width: 25px;
+  height: 3px;
+  background-color: white;
+}
+
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .nav-links {
+    display: none;
+    flex-direction: column;
+    width: 100%;
+    margin-top: 1rem;
+  }
+
+  .nav-links.active {
+    display: flex;
+  }
+
+  .hamburger {
+    display: flex;
+  }
+}
+  </style>
+</head>
+<body>
+
+ <!-- Navigation -->
+<nav class="navbar">
+  <a href="/">
+    <img src="logo.png" alt="FC Kiischpelt Logo" class="nav-logo" />
+  </a>
+  <div class="hamburger" onclick="toggleMenu()">
+    <div></div>
+    <div></div>
+    <div></div>
+  </div>
+  <div class="nav-links" id="navLinks" aria-label="Hauptnavigation">
+  <a href="/">Home</a>
+  <a href="/dauerkaart">Dauerkaart</a>
+  <a href="https://fckw.lu/veräin">Veräin</a>
+  <a href="https://fckw.lu/spillplang">Spillplang</a>
+  <a href="/facebook">Facebook</a>
+  <a href="/sponsoren">Sponsoren</a>
+</div>
+</nav>
+
+  <!-- Main Content -->
+  <div class="container">
+    <h1>Steckbrief – FC KIISCHPELT WËLWERWOLZ</h1>
+    <p>Informationen folgen...</p>
+  </div>
+
+  <!-- Navigation Toggle Script -->
+  <script>
+    function toggleNav() {
+      document.getElementById("navLinks").classList.toggle("show");
+    }
+  </script>
+
+</body>
+</html>
