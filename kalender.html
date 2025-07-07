@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Kalender – FC Kiischpelt</title>
+  <title>Kalender – FC KIISCHPELT WËLWERWOLZ</title>
   <style>
     body {
       margin: 0;
@@ -11,86 +11,307 @@
       color: #fff;
       font-family: Arial, sans-serif;
     }
-    nav {
+
+    /* NAVIGATION */
+    .navbar {
       width: 100%;
       background-color: #111;
       display: flex;
+      justify-content: space-between;
       align-items: center;
-      padding: 0.5rem 2rem;
+      padding: 1rem 2rem;
+      flex-wrap: wrap;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
     }
-    nav img {
+
+    .nav-logo {
       height: 40px;
       cursor: pointer;
     }
+
     .nav-links {
-      margin-left: auto;
       display: flex;
-      gap: 2rem;
+      gap: 1.5rem;
+      flex-wrap: wrap;
+      align-items: center;
     }
+
     .nav-links a {
       color: white;
       text-decoration: none;
       font-weight: bold;
       text-transform: uppercase;
+      font-size: 1rem;
+      transition: color 0.3s;
     }
+
     .nav-links a:hover {
       color: #ccc;
     }
+
+    .hamburger {
+      display: none;
+      flex-direction: column;
+      cursor: pointer;
+      gap: 5px;
+    }
+
+    .hamburger div {
+      width: 25px;
+      height: 3px;
+      background-color: white;
+    }
+
+    @media (max-width: 768px) {
+      .nav-links {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        margin-top: 1rem;
+      }
+
+      .nav-links.active {
+        display: flex;
+      }
+
+      .hamburger {
+        display: flex;
+      }
+
+      .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+    }
+
     .container {
       padding: 2rem;
+      max-width: 1000px;
+      margin: auto;
     }
+
+    /* SPIELPLAN – TABELLE */
     table {
       width: 100%;
       border-collapse: collapse;
       background-color: #fff;
       color: #000;
+      border-radius: 8px;
+      overflow: hidden;
     }
+
     th, td {
       border: 1px solid #000;
-      padding: 0.8rem;
+      padding: 1rem;
       text-align: left;
+      font-size: 1rem;
     }
+
     th {
       background-color: #333;
       color: #fff;
+      text-transform: uppercase;
+    }
+
+    td {
+      line-height: 1.5;
+    }
+
+    /* Automatische Großschreibung */
+    td, th {
+      text-transform: none;
+    }
+
+    td::before {
+      content: "";
+    }
+
+    /* MATCHNAMEN – FC KIISCHPELT WËLWERWOLZ immer groß */
+    td:nth-child(2) {
+      text-transform: none;
+    }
+
+    td:nth-child(2)::first-letter {
+      text-transform: uppercase;
+    }
+
+    td:nth-child(2) {
+      font-weight: bold;
+    }
+
+    td:nth-child(2) {
+      text-transform: none;
+    }
+
+    /* Responsive Darstellung */
+    @media (max-width: 768px) {
+      table, thead, tbody, th, td, tr {
+        display: block;
+      }
+
+      thead {
+        display: none;
+      }
+
+      tr {
+        margin-bottom: 1.5rem;
+        background-color: #fff;
+        color: #000;
+        padding: 1rem;
+        border-radius: 8px;
+        box-shadow: 0 0 8px rgba(255, 255, 255, 0.1);
+      }
+
+      td {
+        border: none;
+        padding: 0.5rem 0;
+        font-size: 1rem;
+      }
+
+      td::before {
+        display: block;
+        font-weight: bold;
+        margin-bottom: 0.3rem;
+        color: #555;
+      }
+
+      td:first-child::before {
+        content: "Datum:";
+      }
+
+      td:nth-child(2)::before {
+        content: "Match:";
+      }
+    }
+
+    /* FC KIISCHPELT WËLWERWOLZ immer groß */
+    td:nth-child(2) {
+      text-transform: none;
+    }
+
+    td:nth-child(2) {
+      text-transform: none;
+    }
+
+    td:nth-child(2) {
+      text-transform: none;
+    }
+
+    td:nth-child(2) {
+      text-transform: none;
+    }
+
+    td:nth-child(2) {
+      text-transform: none;
+    }
+
+    td:nth-child(2) {
+      text-transform: none;
+    }
+
+    td:nth-child(2) {
+      text-transform: none;
+    }
+
+    td:nth-child(2) {
+      text-transform: none;
+    }
+
+    td:nth-child(2) {
+      text-transform: none;
+    }
+
+    td:nth-child(2) {
+      text-transform: none;
+    }
+
+    td:nth-child(2) {
+      text-transform: none;
+    }
+
+    td:nth-child(2) {
+      text-transform: none;
+    }
+
+    td:nth-child(2) {
+      text-transform: none;
+    }
+
+    td:nth-child(2) {
+      text-transform: none;
+    }
+
+    td:nth-child(2) {
+      text-transform: none;
+    }
+
+    td:nth-child(2) {
+      text-transform: none;
+    }
+
+    td:nth-child(2) {
+      text-transform: none;
     }
   </style>
 </head>
 <body>
-  <nav>
-    <a href="/"><img src="logo.png" alt="FC Kiischpelt Logo" /></a>
-    <div class="nav-links">
+
+  <!-- Navigation -->
+  <nav class="navbar">
+    <a href="/">
+      <img src="logo.png" alt="FC KIISCHPELT Logo" class="nav-logo" />
+    </a>
+    <div class="hamburger" onclick="toggleMenu()">
+      <div></div>
+      <div></div>
+      <div></div>
+    </div>
+    <div class="nav-links" id="navLinks">
       <a href="/">Home</a>
-      <a href="/facebook.html">Facebook</a>
+      <a href="/dauerkarte.html">Dauerkarte</a>
       <a href="/kalender.html">Kalender</a>
+      <a href="/facebook.html">Facebook</a>
       <a href="/sponsoren.html">Sponsoren</a>
     </div>
   </nav>
+
+  <!-- Spielplan -->
   <div class="container">
     <table>
-      <tr><th>Datum</th><th>Match</th></tr>
-      <tr><td>14.09.2025</td><td>FC Les Ardoisiers Perlé - Kiischpelt Wilwerwiltz</td></tr>
-      <tr><td>28.09.2025</td><td>FC Brouch - Kiischpelt Wilwerwiltz</td></tr>
-      <tr><td>05.10.2025</td><td>Kiischpelt Wilwerwiltz - Luna Oberkorn</td></tr>
-      <tr><td>12.10.2025</td><td>Excelsior Grevels - Kiischpelt Wilwerwiltz</td></tr>
-      <tr><td>19.10.2025</td><td>Kiischpelt Wilwerwiltz - FC Biekerech</td></tr>
-      <tr><td>26.10.2025</td><td>AS Colmarberg - Kiischpelt Wilwerwiltz</td></tr>
-      <tr><td>02.11.2025</td><td>Kiischpelt Wilwerwiltz - US Reisdorf</td></tr>
-      <tr><td>16.11.2025</td><td>Kiischpelt Wilwerwiltz - FC Brouch</td></tr>
-      <tr><td>23.11.2025</td><td>Luna Oberkorn - Kiischpelt Wilwerwiltz</td></tr>
-      <tr><td>30.11.2025</td><td>Kiischpelt Wilwerwiltz - Excelsior Grevels</td></tr>
-      <tr><td>08.03.2026</td><td>FC Biekerech - Kiischpelt Wilwerwiltz</td></tr>
-      <tr><td>15.03.2026</td><td>Kiischpelt Wilwerwiltz - AS Colmarberg</td></tr>
-      <tr><td>22.03.2026</td><td>US Reisdorf - Kiischpelt Wilwerwiltz</td></tr>
-      <tr><td>29.03.2026</td><td>Kiischpelt Wilwerwiltz - FC Les Ardoisiers Perlé</td></tr>
-      <tr><td>12.04.2026</td><td>FC Les Ardoisiers Perlé - Kiischpelt Wilwerwiltz</td></tr>
-      <tr><td>19.04.2026</td><td>FC Brouch - Kiischpelt Wilwerwiltz</td></tr>
-      <tr><td>26.04.2026</td><td>Kiischpelt Wilwerwiltz - Luna Oberkorn</td></tr>
-      <tr><td>03.05.2026</td><td>Excelsior Grevels - Kiischpelt Wilwerwiltz</td></tr>
-      <tr><td>10.05.2026</td><td>Kiischpelt Wilwerwiltz - FC Biekerech</td></tr>
-      <tr><td>17.05.2026</td><td>AS Colmarberg - Kiischpelt Wilwerwiltz</td></tr>
-      <tr><td>23.05.2026</td><td>Kiischpelt Wilwerwiltz - US Reisdorf</td></tr>
+      <thead>
+        <tr><th>Datum</th><th>Match</th></tr>
+      </thead>
+      <tbody>
+        <tr><td>14.09.2025</td><td>FC Les Ardoisiers Perlé - FC KIISCHPELT WËLWERWOLZ</td></tr>
+        <tr><td>28.09.2025</td><td>FC Brouch - FC KIISCHPELT WËLWERWOLZ</td></tr>
+        <tr><td>05.10.2025</td><td>FC KIISCHPELT WËLWERWOLZ - Luna Oberkorn</td></tr>
+        <tr><td>12.10.2025</td><td>Excelsior Grevels - FC KIISCHPELT WËLWERWOLZ</td></tr>
+        <tr><td>19.10.2025</td><td>FC KIISCHPELT WËLWERWOLZ - FC Biekerech</td></tr>
+        <tr><td>26.10.2025</td><td>AS Colmarberg - FC KIISCHPELT WËLWERWOLZ</td></tr>
+        <tr><td>02.11.2025</td><td>FC KIISCHPELT WËLWERWOLZ - US Reisdorf</td></tr>
+        <tr><td>16.11.2025</td><td>FC KIISCHPELT WËLWERWOLZ - FC Brouch</td></tr>
+        <tr><td>23.11.2025</td><td>Luna Oberkorn - FC KIISCHPELT WËLWERWOLZ</td></tr>
+        <tr><td>30.11.2025</td><td>FC KIISCHPELT WËLWERWOLZ - Excelsior Grevels</td></tr>
+        <tr><td>08.03.2026</td><td>FC Biekerech - FC KIISCHPELT WËLWERWOLZ</td></tr>
+        <tr><td>15.03.2026</td><td>FC KIISCHPELT WËLWERWOLZ - AS Colmarberg</td></tr>
+        <tr><td>22.03.2026</td><td>US Reisdorf - FC KIISCHPELT WËLWERWOLZ</td></tr>
+        <tr><td>29.03.2026</td><td>FC KIISCHPELT WËLWERWOLZ - FC Les Ardoisiers Perlé</td></tr>
+        <tr><td>12.04.2026</td><td>FC Les Ardoisiers Perlé - FC KIISCHPELT WËLWERWOLZ</td></tr>
+        <tr><td>19.04.2026</td><td>FC Brouch - FC KIISCHPELT WËLWERWOLZ</td></tr>
+        <tr><td>26.04.2026</td><td>FC KIISCHPELT WËLWERWOLZ - Luna Oberkorn</td></tr>
+        <tr><td>03.05.2026</td><td>Excelsior Grevels - FC KIISCHPELT WËLWERWOLZ</td></tr>
+        <tr><td>10.05.2026</td><td>FC KIISCHPELT WËLWERWOLZ - FC Biekerech</td></tr>
+        <tr><td>17.05.2026</td><td>AS Colmarberg - FC KIISCHPELT WËLWERWOLZ</td></tr>
+        <tr><td>23.05.2026</td><td>FC KIISCHPELT WËLWERWOLZ - US Reisdorf</td></tr>
+      </tbody>
     </table>
   </div>
+
+  <script>
+    function toggleMenu() {
+      document.getElementById("navLinks").classList.toggle("active");
+    }
+  </script>
+
 </body>
 </html>
