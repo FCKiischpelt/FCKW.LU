@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Sponsoren – FC Kiischpelt</title>
+  <title>Sponsoren – FC KIISCHPELT WËLWERWOLZ</title>
   <style>
     body {
       margin: 0;
@@ -11,48 +11,122 @@
       color: #fff;
       font-family: Arial, sans-serif;
     }
-    nav {
+
+    /* Navbar Styles */
+    nav.navbar {
       width: 100%;
       background-color: #111;
       display: flex;
       align-items: center;
-      padding: 0.5rem 2rem;
+      justify-content: space-between;
+      padding: 0.8rem 2rem;
+      position: relative;
+      z-index: 1000;
     }
-    nav img {
+
+    .nav-logo {
       height: 40px;
+    }
+
+    .nav-toggle {
+      display: none;
+      font-size: 1.8rem;
+      color: white;
       cursor: pointer;
     }
+
     .nav-links {
-      margin-left: auto;
       display: flex;
       gap: 2rem;
     }
+
     .nav-links a {
       color: white;
       text-decoration: none;
       font-weight: bold;
       text-transform: uppercase;
+      transition: color 0.3s;
     }
+
     .nav-links a:hover {
       color: #ccc;
     }
+
+    /* Responsive Nav */
+    @media (max-width: 768px) {
+      .nav-toggle {
+        display: block;
+      }
+
+      .nav-links {
+        flex-direction: column;
+        position: absolute;
+        top: 60px;
+        right: 0;
+        background-color: #111;
+        width: 100%;
+        display: none;
+        padding: 1rem 2rem;
+      }
+
+      .nav-links.show {
+        display: flex;
+      }
+
+      .nav-links a {
+        padding: 0.5rem 0;
+      }
+    }
+
+    /* Main Container */
     .container {
       padding: 2rem;
+    }
+
+    /* Headline Styling */
+    h1 {
+      text-transform: uppercase;
+      text-align: center;
+      margin-top: 2rem;
+      font-size: 1.8rem;
+      color: #fff;
+    }
+
+    p {
+      text-align: center;
+      font-size: 1.1rem;
+      color: #ddd;
     }
   </style>
 </head>
 <body>
-  <nav>
-    <a href="/"><img src="logo.png" alt="FC Kiischpelt Logo" /></a>
-    <div class="nav-links">
+
+  <!-- Navigation -->
+  <nav class="navbar">
+    <a href="/">
+      <img src="logo.png" alt="FC KIISCHPELT WËLWERWOLZ Logo" class="nav-logo" />
+    </a>
+    <div class="nav-toggle" onclick="toggleNav()">☰</div>
+    <div class="nav-links" id="navLinks">
       <a href="/">Home</a>
       <a href="/facebook.html">Facebook</a>
       <a href="/kalender.html">Kalender</a>
       <a href="/sponsoren.html">Sponsoren</a>
     </div>
   </nav>
+
+  <!-- Main Content -->
   <div class="container">
+    <h1>SPONSOREN – FC KIISCHPELT WËLWERWOLZ</h1>
     <p>Sponsoreninhalte folgen...</p>
   </div>
+
+  <!-- Navigation Toggle Script -->
+  <script>
+    function toggleNav() {
+      document.getElementById("navLinks").classList.toggle("show");
+    }
+  </script>
+
 </body>
 </html>
