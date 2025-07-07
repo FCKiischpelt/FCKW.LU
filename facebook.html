@@ -11,53 +11,142 @@
       color: #fff;
       font-family: Arial, sans-serif;
     }
-    nav {
+
+    /* NAVIGATION */
+    .navbar {
       width: 100%;
       background-color: #111;
       display: flex;
+      justify-content: space-between;
       align-items: center;
-      padding: 0.5rem 2rem;
+      padding: 1rem 2rem;
+      flex-wrap: wrap;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
     }
-    nav img {
+
+    .nav-logo {
       height: 40px;
       cursor: pointer;
     }
+
     .nav-links {
-      margin-left: auto;
       display: flex;
-      gap: 2rem;
+      gap: 1.5rem;
+      flex-wrap: wrap;
+      align-items: center;
     }
+
     .nav-links a {
       color: white;
       text-decoration: none;
       font-weight: bold;
       text-transform: uppercase;
+      font-size: 1rem;
+      transition: color 0.3s;
     }
+
     .nav-links a:hover {
       color: #ccc;
     }
+
+    .hamburger {
+      display: none;
+      flex-direction: column;
+      cursor: pointer;
+      gap: 5px;
+    }
+
+    .hamburger div {
+      width: 25px;
+      height: 3px;
+      background-color: white;
+    }
+
+    @media (max-width: 768px) {
+      .nav-links {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        margin-top: 1rem;
+      }
+
+      .nav-links.active {
+        display: flex;
+      }
+
+      .hamburger {
+        display: flex;
+      }
+
+      .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+    }
+
+    /* CONTAINER */
     .container {
       padding: 2rem;
+      display: flex;
+      justify-content: center;
     }
+
+    .fb-container {
+      width: 100%;
+      max-width: 700px;
+      aspect-ratio: 9 / 16;
+      background-color: #fff;
+      border-radius: 8px;
+      overflow: hidden;
+    }
+
     iframe {
       border: none;
       width: 100%;
-      height: 800px;
+      height: 100%;
     }
   </style>
 </head>
 <body>
-  <nav>
-    <a href="/"><img src="logo.png" alt="FC Kiischpelt Logo" /></a>
-    <div class="nav-links">
+
+  <!-- Navigation -->
+  <nav class="navbar">
+    <a href="/">
+      <img src="logo.png" alt="FC Kiischpelt Logo" class="nav-logo" />
+    </a>
+    <div class="hamburger" onclick="toggleMenu()">
+      <div></div>
+      <div></div>
+      <div></div>
+    </div>
+    <div class="nav-links" id="navLinks">
       <a href="/">Home</a>
-      <a href="/facebook.html">Facebook</a>
+      <a href="/dauerkarte.html">Dauerkarte</a>
+      <a href="/verein.html">Verein</a>
       <a href="/kalender.html">Kalender</a>
+      <a href="/facebook.html">Facebook</a>
       <a href="/sponsoren.html">Sponsoren</a>
     </div>
   </nav>
+
+  <!-- Facebook Feed -->
   <div class="container">
-    <iframe src="https://www.facebook.com/plugins/page.php?href=https://www.facebook.com/fckiischpelt&tabs=timeline&width=500&height=800&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=true&appId"></iframe>
+    <div class="fb-container">
+      <iframe
+        src="https://www.facebook.com/plugins/page.php?href=https://www.facebook.com/fckiischpelt&tabs=timeline&width=500&height=800&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=true&appId"
+        scrolling="no"
+        allowtransparency="true"
+        allow="encrypted-media"
+        title="Facebook Page"
+      ></iframe>
+    </div>
   </div>
+
+  <script>
+    function toggleMenu() {
+      document.getElementById("navLinks").classList.toggle("active");
+    }
+  </script>
+
 </body>
 </html>
