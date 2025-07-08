@@ -17,83 +17,82 @@
     }
 
     /* Neue Navbar Styles */
-   .navbar {
-  width: 100%;
-  background-color: #111;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 1rem 2rem;
-  box-sizing: border-box;
-  flex-wrap: wrap;
-  position: relative;
-  z-index: 1000;
-}
+    .navbar {
+      width: 100%;
+      background-color: #111;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 1rem 2rem;
+      box-sizing: border-box;
+      flex-wrap: wrap;
+      position: relative;
+      z-index: 1000;
+    }
 
-.nav-logo {
-  height: 40px;
-  cursor: pointer;
-  flex-shrink: 0;
-}
+    .nav-logo {
+      height: 40px;
+      cursor: pointer;
+      flex-shrink: 0;
+    }
 
-.nav-links {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 1.5rem;
-  align-items: center;
-  justify-content: flex-end;
-  flex-grow: 1;
-}
+    .nav-links {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1.5rem;
+      align-items: center;
+      justify-content: flex-end;
+      flex-grow: 1;
+    }
 
-.nav-links a {
-  color: white;
-  text-decoration: none;
-  font-weight: bold;
-  text-transform: uppercase;
-  font-size: 1rem;
-  transition: color 0.3s;
-  white-space: nowrap;
-}
+    .nav-links a {
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+      text-transform: uppercase;
+      font-size: 1rem;
+      transition: color 0.3s;
+      white-space: nowrap;
+    }
 
-.nav-links a:hover {
-  color: #ccc;
-}
+    .nav-links a:hover {
+      color: #ccc;
+    }
 
-/* Mobile Optimierung */
-.hamburger {
-  display: none;
-  flex-direction: column;
-  cursor: pointer;
-  gap: 5px;
-}
+    .hamburger {
+      display: none;
+      flex-direction: column;
+      cursor: pointer;
+      gap: 5px;
+    }
 
-.hamburger div {
-  width: 25px;
-  height: 3px;
-  background-color: white;
-}
+    .hamburger div {
+      width: 25px;
+      height: 3px;
+      background-color: white;
+    }
 
-@media (max-width: 768px) {
-  .navbar {
-    flex-direction: column;
-    align-items: flex-start;
-  }
+    @media (max-width: 768px) {
+      .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+      }
 
-  .nav-links {
-    display: none;
-    flex-direction: column;
-    width: 100%;
-    margin-top: 1rem;
-  }
+      .nav-links {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        margin-top: 1rem;
+      }
 
-  .nav-links.active {
-    display: flex;
-  }
+      .nav-links.active {
+        display: flex;
+      }
 
-  .hamburger {
-    display: flex;
-  }
-}
+      .hamburger {
+        display: flex;
+      }
+    }
 
     /* Inhalt */
     .container {
@@ -181,11 +180,28 @@
     .button:hover {
       background-color: #333;
     }
+
+    /* Bildbereich */
+    .image-row {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 1rem;
+      margin-top: 2rem;
+    }
+
+    .card-image {
+      max-width: 100%;
+      width: 400px;
+      height: auto;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(255, 255, 255, 0.2);
+    }
   </style>
 </head>
 <body>
 
- <!-- Navigation -->
+<!-- Navigation -->
 <nav class="navbar">
   <a href="/">
     <img src="logo.png" alt="FC Kiischpelt Logo" class="nav-logo" />
@@ -196,56 +212,63 @@
     <div></div>
   </div>
   <div class="nav-links" id="navLinks" aria-label="Hauptnavigation">
-  <a href="/">Home</a>
-  <a href="/dauerkaart">Dauerkaart</a>
-  <a href="https://fckw.lu/veräin">Veräin</a>
-  <a href="https://fckw.lu/spillplang">Spillplang</a>
-  <a href="/facebook">Facebook</a>
-  <a href="/sponsoren">Sponsoren</a>
-</div>
+    <a href="/">Home</a>
+    <a href="/dauerkaart">Dauerkaart</a>
+    <a href="https://fckw.lu/veräin">Veräin</a>
+    <a href="https://fckw.lu/spillplang">Spillplang</a>
+    <a href="/facebook">Facebook</a>
+    <a href="/sponsoren">Sponsoren</a>
+  </div>
 </nav>
 
-  <div class="container">
-    <div class="title">DAUERKAART / ABO SAISON 25/26 – MAIL</div>
+<div class="container">
+  <div class="title">DAUERKAART / ABO SAISON 25/26 – MAIL</div>
 
-    <div class="info-boxes">
-      <div class="info">
-        <strong>Instruktiounen fir d’Bestellung vun der Dauerkaart per Mail:</strong>
-        <ul>
-          <li>Numm – Virnumm</li>
-          <li>E-Mail</li>
-          <li>DIGICASH oder CASH un een Spiller oder Verantwortlechen vum Veräin – Säin Numm an der Mail ernimmen an den Datum vun der Bezuelung!</li>
-          <li>Ofhuele vun der Dauerkaart: Buvette oder Post (Adress uginn)</li>
-        </ul>
-      </div>
-      <div class="info">
-        <strong>Instructions pour la commande de la carte par mail :</strong>
-        <ul>
-          <li>Nom – Prénom</li>
-          <li>E-mail</li>
-          <li>DIGICASH ou CASH à un joueur ou responsable du club – Mentionner son nom dans le mail ainsi que la date du paiement !</li>
-          <li>Retrait de la carte d’abonnement : buvette ou poste (adresse)</li>
-        </ul>
-      </div>
+  <div class="info-boxes">
+    <div class="info">
+      <strong>Instruktiounen fir d’Bestellung vun der Dauerkaart per Mail:</strong>
+      <ul>
+        <li>Numm – Virnumm</li>
+        <li>E-Mail</li>
+        <li>DIGICASH oder CASH un een Spiller oder Verantwortlechen vum Veräin – Säin Numm an der Mail ernimmen an den Datum vun der Bezuelung!</li>
+        <li>Ofhuele vun der Dauerkaart: Buvette oder Post (Adress uginn)</li>
+      </ul>
     </div>
-
-    <div class="email-box">
-      Mail: <a href="mailto:dauerkaart@fckw.lu" style="color:#fff;">dauerkaart@fckw.lu</a>
-    </div>
-
-    <div class="button-container">
-      <a class="button" href="mailto:dauerkaart@fckw.lu?subject=Dauerkaart%20Saison%2025/26&body=Dauerkarte%20-%20FC%20KIISCHPELT%20WËLWERWOLZ%20-%20Carte%20d'abonnement%0A%0AName/Nom:%0A%0AVorname/Prénom:%0A%0AE-Mail:%0A%0ADIGICASH%20an/à%20(Name%20Spieler%20FC%20Kiischpelt/Nom%20du%20joueur%20FC%20Kiischpelt):%0A%0ADatum%20vun%20der%20Bezuelung/Date%20du%20paiement:%0A%0ABevorzugte%20Abholung%20der%20Dauerkarte/Retrait%20préférentiel%20de%20la%20carte%20d'abonnement%20(Buvette/Post):">
-        DAUERKAART BESTELLEN / COMMANDER L'ABONNEMENT
-      </a>
+    <div class="info">
+      <strong>Instructions pour la commande de la carte par mail :</strong>
+      <ul>
+        <li>Nom – Prénom</li>
+        <li>E-mail</li>
+        <li>DIGICASH ou CASH à un joueur ou responsable du club – Mentionner son nom dans le mail ainsi que la date du paiement !</li>
+        <li>Retrait de la carte d’abonnement : buvette ou poste (adresse)</li>
+      </ul>
     </div>
   </div>
 
-  <script>
-    function toggleMenu() {
-      const nav = document.getElementById('navLinks');
-      nav.classList.toggle('active');
-    }
-  </script>
+  <div class="email-box">
+    Mail: <a href="mailto:dauerkaart@fckw.lu" style="color:#fff;">dauerkaart@fckw.lu</a>
+  </div>
+
+  <div class="button-container">
+    <a class="button" href="mailto:dauerkaart@fckw.lu?subject=Dauerkaart%20Saison%2025/26&body=Dauerkarte%20-%20FC%20KIISCHPELT%20WËLWERWOLZ%20-%20Carte%20d'abonnement%0A%0AName/Nom:%0A%0AVorname/Prénom:%0A%0AE-Mail:%0A%0ADIGICASH%20an/à%20(Name%20Spieler%20FC%20Kiischpelt/Nom%20du%20joueur%20FC%20Kiischpelt):%0A%0ADatum%20vun%20der%20Bezuelung/Date%20du%20paiement:%0A%0ABevorzugte%20Abholung%20der%20Dauerkarte/Retrait%20préférentiel%20de%20la%20carte%20d'abonnement%20(Buvette/Post):">
+      DAUERKAART BESTELLEN / COMMANDER L'ABONNEMENT
+    </a>
+  </div>
+
+  <!-- Neue Bild-Sektion -->
+  <div class="image-row">
+    <img src="Dauerkarte FCKW Version 2.png" alt="Dauerkarte Vorderseite" class="card-image" />
+    <img src="Dauerkarte FCKW Version 2 Rückseite.png" alt="Dauerkarte Rückseite" class="card-image" />
+  </div>
+
+</div>
+
+<script>
+  function toggleMenu() {
+    const nav = document.getElementById('navLinks');
+    nav.classList.toggle('active');
+  }
+</script>
 
 </body>
 </html>
