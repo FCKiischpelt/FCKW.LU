@@ -1,132 +1,127 @@
 <!DOCTYPE html>
 <html lang="lb">
 <head>
-<meta charset="UTF-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1" />
-<title>FC KIISCHPELT WËLWERWOLZ</title>
-<style>
-  body, html {
-    margin: 0; padding: 0;
-    background-color: #000;
-    color: #fff;
-    font-family: Arial, sans-serif;
-  }
-
-  /* NAVIGATION */
-  .navbar {
-    background-color: #111;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 1rem 2rem;
-    flex-wrap: wrap;
-  }
-  .nav-logo {
-    height: 40px;
-    cursor: pointer;
-  }
-  .nav-links {
-    display: flex;
-    gap: 1.5rem;
-  }
-  .nav-links a {
-    color: #fff;
-    text-decoration: none;
-    font-weight: bold;
-    text-transform: uppercase;
-    font-size: 1rem;
-    white-space: nowrap;
-    transition: color 0.3s;
-  }
-  .nav-links a:hover {
-    color: #ccc;
-  }
-
-  /* Hamburger Menü für Mobil */
-  .hamburger {
-    display: none;
-    flex-direction: column;
-    cursor: pointer;
-    gap: 5px;
-  }
-  .hamburger div {
-    width: 25px;
-    height: 3px;
-    background-color: white;
-  }
-  @media (max-width: 768px) {
-    .nav-links {
-      display: none;
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Social Icons – FC KIISCHPELT WËLWERWOLZ</title>
+  <style>
+    body {
+      margin: 0;
+      background-color: #000;
+      color: #fff;
+      font-family: Arial, sans-serif;
+      display: flex;
       flex-direction: column;
+      align-items: center;
+      min-height: 100vh;
+      padding: 2rem;
+    }
+
+    /* NAVIGATION */
+    .navbar {
       width: 100%;
-      margin-top: 1rem;
-    }
-    .nav-links.active {
+      background-color: #111;
       display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 1rem 2rem;
+      box-sizing: border-box;
+      flex-wrap: wrap;
+      position: relative;
+      z-index: 1000;
+      margin-bottom: 2rem;
     }
-    .hamburger {
+
+    .nav-logo {
+      height: 40px;
+      cursor: pointer;
+      flex-shrink: 0;
+    }
+
+    .nav-links {
       display: flex;
+      flex-wrap: wrap;
+      gap: 1.5rem;
+      align-items: center;
+      justify-content: flex-end;
+      flex-grow: 1;
     }
-  }
 
-  /* Container für die Social Icons */
-  .social-icons {
-    max-width: 700px;
-    margin: 2rem auto;
-    display: flex;
-    justify-content: center;
-    gap: 2rem;
-  }
+    .nav-links a {
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+      text-transform: uppercase;
+      font-size: 1rem;
+      transition: color 0.3s;
+      white-space: nowrap;
+    }
 
-  .social-icons a img {
-    display: block;
-    width: 50px; /* Größe der Icons */
-    height: 50px;
-    object-fit: contain;
-    filter: brightness(0) invert(1); /* weiße Icons, falls PNG mit Farbe */
-    transition: filter 0.3s ease;
-  }
-  .social-icons a:hover img {
-    filter: brightness(0) invert(0.7); /* leichter Hover Effekt */
-  }
-</style>
+    .nav-links a:hover {
+      color: #ccc;
+    }
+
+    /* Social Icons Container */
+    .social-icons {
+      display: flex;
+      justify-content: center;
+      gap: 2rem;
+      max-width: 200px;
+      width: 100%;
+    }
+
+    .social-icons a {
+      background-color: #222; /* dunkler Hintergrund für weiße Icons */
+      padding: 8px;
+      border-radius: 8px;
+      display: inline-block;
+      transition: background-color 0.3s ease;
+    }
+
+    .social-icons a:hover {
+      background-color: #444;
+    }
+
+    .social-icons a img {
+      display: block;
+      width: 50px;
+      height: 50px;
+      object-fit: contain;
+      filter: none; /* Kein invert, da Hintergrund schon dunkel */
+      transition: transform 0.3s ease;
+    }
+
+    .social-icons a:hover img {
+      transform: scale(1.1);
+    }
+  </style>
 </head>
 <body>
 
-<nav class="navbar" role="navigation" aria-label="Hauptnavigation">
-  <a href="/">
-    <img src="logo.png" alt="FC Kiischpelt Logo" class="nav-logo" />
-  </a>
-  <div class="hamburger" aria-label="Menü öffnen" role="button" tabindex="0" onclick="toggleMenu()" onkeypress="if(event.key==='Enter') toggleMenu()">
-    <div></div>
-    <div></div>
-    <div></div>
-  </div>
-  <div class="nav-links" id="navLinks">
-    <a href="/">Home</a>
-    <a href="/dauerkaart">Dauerkaart</a>
-    <a href="https://fckw.lu/veräin">Veräin</a>
-    <a href="https://fckw.lu/spillplang">Spillplang</a>
-    <a href="/facebook">Facebook</a>
-    <a href="/sponsoren">Sponsoren</a>
-  </div>
-</nav>
+  <!-- Navigation -->
+  <nav class="navbar">
+    <a href="/">
+      <img src="logo.png" alt="FC Kiischpelt Logo" class="nav-logo" />
+    </a>
+    <div class="nav-links" id="navLinks" aria-label="Hauptnavigation">
+      <a href="/">Home</a>
+      <a href="/dauerkaart">Dauerkaart</a>
+      <a href="https://fckw.lu/veräin">Veräin</a>
+      <a href="https://fckw.lu/spillplang">Spillplang</a>
+      <a href="/facebook">Facebook</a>
+      <a href="/sponsoren">Sponsoren</a>
+    </div>
+  </nav>
 
-<!-- Social Icons -->
-<div class="social-icons" role="region" aria-label="Social Media Links">
-  <a href="https://www.facebook.com/fckiischpelt" target="_blank" rel="noopener" aria-label="Facebook FC Kiischpelt">
-    <img src="Facebook_Icon.png" alt="Facebook Icon" />
-  </a>
-  <a href="https://www.instagram.com/fckiischpelt" target="_blank" rel="noopener" aria-label="Instagram FC Kiischpelt">
-    <img src="Instagram_Icon.png" alt="Instagram Icon" />
-  </a>
-</div>
-
-<script>
-  function toggleMenu() {
-    document.getElementById('navLinks').classList.toggle('active');
-  }
-</script>
+  <!-- Social Icons -->
+  <div class="social-icons" role="region" aria-label="Social Media Links">
+    <a href="https://www.facebook.com/fckiischpelt" target="_blank" rel="noopener noreferrer" aria-label="Facebook FC Kiischpelt">
+      <img src="Facebook_Icon.png" alt="Facebook Icon" />
+    </a>
+    <a href="https://www.instagram.com/fckiischpelt" target="_blank" rel="noopener noreferrer" aria-label="Instagram FC Kiischpelt">
+      <img src="Instagram_Icon.png" alt="Instagram Icon" />
+    </a>
+  </div>
 
 </body>
 </html>
