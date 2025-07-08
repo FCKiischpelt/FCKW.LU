@@ -5,165 +5,54 @@
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>Facebook – FC KIISCHPELT WËLWERWOLZ</title>
 <style>
-  /* Global Reset */
-  *, *::before, *::after {
-    box-sizing: border-box;
-  }
   body, html {
-    margin: 0;
-    padding: 0;
+    margin: 0; padding: 0;
     background-color: #000;
     color: #fff;
     font-family: Arial, sans-serif;
     overflow-x: hidden; /* Kein horizontaler Scroll */
   }
 
-  /* NAVIGATION */
-  .navbar {
-    width: 100%;
-    background-color: #111;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 1rem 2rem;
-    flex-wrap: wrap;
-    position: relative;
-    z-index: 1000;
-  }
-
-  .nav-logo {
-    height: 40px;
-    cursor: pointer;
-    flex-shrink: 0;
-  }
-
-  .nav-links {
-    display: flex;
-    gap: 1.5rem;
-    align-items: center;
-    justify-content: flex-end;
-    flex-grow: 1;
-    flex-wrap: wrap;
-  }
-
-  .nav-links a {
-    color: white;
-    text-decoration: none;
-    font-weight: bold;
-    text-transform: uppercase;
-    font-size: 1rem;
-    transition: color 0.3s;
-    white-space: nowrap;
-  }
-
-  .nav-links a:hover {
-    color: #ccc;
-  }
-
-  /* Hamburger */
-  .hamburger {
-    display: none;
-    flex-direction: column;
-    cursor: pointer;
-    gap: 5px;
-  }
-  .hamburger div {
-    width: 25px;
-    height: 3px;
-    background-color: white;
-  }
-
-  /* Responsive Navigation */
-  @media (max-width: 768px) {
-    .navbar {
-      flex-direction: column;
-      align-items: flex-start;
-      padding: 1rem;
-    }
-    .nav-links {
-      display: none;
-      flex-direction: column;
-      width: 100%;
-      margin-top: 1rem;
-    }
-    .nav-links.active {
-      display: flex;
-    }
-    .hamburger {
-      display: flex;
-      margin-left: auto;
-    }
-  }
-
-  /* CONTAINER Facebook */
   .container {
     max-width: 700px;
     margin: 2rem auto;
     padding: 0 1rem;
   }
 
-  /* Facebook Iframe */
+  /* Responsive Facebook iframe Wrapper */
   .fb-wrapper {
+    position: relative;
     width: 100%;
-    max-width: 500px; /* Facebook width from iframe src */
-    margin: 0 auto;
+    /* Höhe so anpassen, dass Seitenverhältnis 500x800 = 5:8 = 62.5% */
+    padding-top: 62.5%;
     background-color: #fff;
     border-radius: 8px;
     overflow: hidden;
   }
 
   .fb-wrapper iframe {
+    position: absolute;
+    top: 0; left: 0;
     width: 100%;
-    height: 800px; /* fixe Höhe passend zur Breite */
+    height: 100%;
     border: 0;
-    display: block;
   }
 </style>
 </head>
 <body>
 
-  <!-- Navigation -->
-  <nav class="navbar" role="navigation" aria-label="Hauptnavigation">
-    <a href="/">
-      <img src="logo.png" alt="FC Kiischpelt Logo" class="nav-logo" />
-    </a>
-    <div class="hamburger" aria-label="Menü öffnen" aria-expanded="false" role="button" tabindex="0" onclick="toggleMenu()" onkeypress="if(event.key==='Enter') toggleMenu()">
-      <div></div>
-      <div></div>
-      <div></div>
-    </div>
-    <div class="nav-links" id="navLinks">
-      <a href="/">Home</a>
-      <a href="/dauerkaart">Dauerkaart</a>
-      <a href="https://fckw.lu/veräin">Veräin</a>
-      <a href="https://fckw.lu/spillplang">Spillplang</a>
-      <a href="/facebook">Facebook</a>
-      <a href="/sponsoren">Sponsoren</a>
-    </div>
-  </nav>
-
-  <!-- Facebook Feed -->
   <main class="container" role="main">
     <section class="fb-wrapper" aria-label="Facebook Feed">
       <iframe 
-        src="https://www.facebook.com/plugins/page.php?href=https://www.facebook.com/fckiischpelt&tabs=timeline&width=500&height=800&small_header=false&adapt_container_width=false&hide_cover=false&show_facepile=true" 
+        src="https://www.facebook.com/plugins/page.php?href=https://www.facebook.com/fckiischpelt&tabs=timeline&width=500&height=800&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=true" 
         scrolling="no" 
         allowtransparency="true" 
         allow="encrypted-media" 
-        title="Facebook Feed">
+        title="Facebook Feed"
+        >
       </iframe>
     </section>
   </main>
-
-<script>
-  function toggleMenu() {
-    const nav = document.getElementById('navLinks');
-    const hamburger = document.querySelector('.hamburger');
-    nav.classList.toggle('active');
-    const expanded = hamburger.getAttribute('aria-expanded') === 'true';
-    hamburger.setAttribute('aria-expanded', String(!expanded));
-  }
-</script>
 
 </body>
 </html>
