@@ -10,9 +10,12 @@
       background-color: #000;
       color: #fff;
       font-family: Arial, sans-serif;
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
     }
 
-    /* Navbar Styles */
+    /* Navigation Styles */
     .navbar {
       width: 100%;
       background-color: #111;
@@ -89,6 +92,43 @@
       .hamburger {
         display: flex;
       }
+
+      .main-heading h1 {
+        font-size: 1.8rem;
+      }
+
+      .main-heading p {
+        font-size: 1rem;
+      }
+    }
+
+    /* Main content */
+    .main-content {
+      flex: 1;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 2rem;
+      flex-direction: column;
+      text-align: center;
+    }
+
+    .main-content img {
+      max-width: 300px;
+      height: auto;
+      margin-bottom: 2rem;
+    }
+
+    /* Headings */
+    .main-heading h1 {
+      font-size: 2.5rem;
+      margin: 0;
+    }
+
+    .main-heading p {
+      font-size: 1.2rem;
+      margin-top: 0.5rem;
+      color: #ccc;
     }
   </style>
 </head>
@@ -99,7 +139,7 @@
   <a href="/">
     <img src="logo.png" alt="FC Kiischpelt Logo" class="nav-logo" />
   </a>
-  <div class="hamburger" onclick="toggleNav()">
+  <div class="hamburger" onclick="toggleMenu()">
     <div></div>
     <div></div>
     <div></div>
@@ -123,10 +163,10 @@
   </div>
 </div>
 
-<!-- Navigation Toggle Script -->
 <script>
-  function toggleNav() {
-    document.getElementById("navLinks").classList.toggle("active");
+  function toggleMenu() {
+    const nav = document.getElementById('navLinks');
+    nav.classList.toggle('active');
   }
 </script>
 
