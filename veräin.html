@@ -100,13 +100,12 @@
       }
     }
 
-    /* Kompakterer Hauptbereich */
     .main-content {
       flex: 1;
       display: flex;
       justify-content: center;
       align-items: flex-start;
-      padding: 1rem 1.5rem;
+      padding: 0 1.5rem;
       flex-direction: column;
       max-width: 900px;
       margin: 0 auto;
@@ -116,17 +115,21 @@
       width: 100%;
       text-align: left;
       line-height: 1.4;
+      margin-top: 0;
     }
 
     .main-heading h1 {
       font-size: 2.2rem;
+      margin-top: 0;
       margin-bottom: 2rem;
+      text-align: center;
     }
 
     .main-heading h2 {
       font-size: 1.4rem;
       margin-top: 2rem;
-      margin-bottom: 0.5rem;
+      margin-bottom: 1.2rem; /* Mehr Abstand zum folgenden Text */
+      text-align: center;
     }
 
     .main-heading p {
@@ -134,10 +137,6 @@
       margin: 0.3rem 0 0.8rem;
       color: #ccc;
     }
-    .main-heading h1,
-.main-heading h2 {
-  text-align: center;
-}
   </style>
 </head>
 <body>
