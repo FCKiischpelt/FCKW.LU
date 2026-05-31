@@ -10,29 +10,58 @@
       background-color: #000;
       color: #fff;
       font-family: Arial, sans-serif;
-      /* Verhindert horizontales Scrollen durch das schräge Banner */
-      overflow-x: hidden; 
       position: relative;
     }
 
-    /* --- Saison Coming Soon Overlay --- */
-    .coming-soon-ribbon {
+    /* --- VOLLBILD DIAGONAL OVERLAY (Wie auf dem Screenshot) --- */
+    .diagonal-overlay {
       position: fixed;
-      top: 50px;
-      right: -80px;
-      background-color: #e50914; /* Kräftiges Rot */
-      color: #fff;
-      text-align: center;
-      width: 350px;
-      font-weight: bold;
-      font-size: 1.1rem;
-      padding: 10px 0;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      z-index: 9999;
+      pointer-events: none; /* Erlaubt Klicks auf die Tabelle/Links darunter */
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      overflow: hidden;
+    }
+
+    /* Der rote Balken, der sich quer über den gesamten Bildschirm spannt */
+    .diagonal-overlay::before {
+      content: "";
+      position: absolute;
+      width: 150%;
+      height: 120px; /* Breite des roten Balkens */
+      background-color: #d32f2f; /* Kräftiges Vereins- / Signalrot */
+      transform: rotate(-35deg); /* Perfekter diagonaler Winkel von links unten nach rechts oben */
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.7);
+    }
+
+    /* Der Text, der exakt auf dem Balken zentriert und mitgedreht wird */
+    .diagonal-text {
+      position: absolute;
+      color: #ffffff;
+      font-size: 4.5rem; /* Sehr groß und unübersehbar */
+      font-weight: 900; /* Extra Fett */
       text-transform: uppercase;
-      letter-spacing: 1px;
-      transform: rotate(45deg);
-      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
-      z-index: 9999; /* Schwebend über allen Elementen */
-      pointer-events: none; /* Klicks gehen durch das Banner hindurch */
+      letter-spacing: 4px;
+      white-space: nowrap;
+      transform: rotate(-35deg);
+      text-shadow: 3px 3px 10px rgba(0, 0, 0, 0.6);
+      font-family: 'Impact', 'Arial Black', sans-serif; /* Markanter Fußball-Look */
+    }
+
+    /* Responsive Anpassung für Mobilgeräte, damit der Text lesbar bleibt */
+    @media (max-width: 768px) {
+      .diagonal-overlay::before {
+        height: 70px;
+      }
+      .diagonal-text {
+        font-size: 1.8rem;
+        letter-spacing: 2px;
+      }
     }
 
     .navbar {
@@ -110,14 +139,6 @@
       .hamburger {
         display: flex;
       }
-      
-      /* Anpassung für kleinere Bildschirme, damit es nicht zu viel verdeckt */
-      .coming-soon-ribbon {
-        font-size: 0.9rem;
-        width: 280px;
-        top: 40px;
-        right: -70px;
-      }
     }
 
     .container {
@@ -187,7 +208,9 @@
 </head>
 <body>
 
-  <div class="coming-soon-ribbon">Saison 26/27 - Coming soon</div>
+  <div class="diagonal-overlay">
+    <div class="diagonal-text">Saison 26/27 - Coming soon</div>
+  </div>
 
   <nav class="navbar">
     <a href="/">
