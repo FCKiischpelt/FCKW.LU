@@ -10,6 +10,29 @@
       background-color: #000;
       color: #fff;
       font-family: Arial, sans-serif;
+      /* Verhindert horizontales Scrollen durch das schräge Banner */
+      overflow-x: hidden; 
+      position: relative;
+    }
+
+    /* --- Saison Coming Soon Overlay --- */
+    .coming-soon-ribbon {
+      position: fixed;
+      top: 50px;
+      right: -80px;
+      background-color: #e50914; /* Kräftiges Rot */
+      color: #fff;
+      text-align: center;
+      width: 350px;
+      font-weight: bold;
+      font-size: 1.1rem;
+      padding: 10px 0;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      transform: rotate(45deg);
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+      z-index: 9999; /* Schwebend über allen Elementen */
+      pointer-events: none; /* Klicks gehen durch das Banner hindurch */
     }
 
     .navbar {
@@ -87,6 +110,14 @@
       .hamburger {
         display: flex;
       }
+      
+      /* Anpassung für kleinere Bildschirme, damit es nicht zu viel verdeckt */
+      .coming-soon-ribbon {
+        font-size: 0.9rem;
+        width: 280px;
+        top: 40px;
+        right: -70px;
+      }
     }
 
     .container {
@@ -156,7 +187,8 @@
 </head>
 <body>
 
-  <!-- Navigation -->
+  <div class="coming-soon-ribbon">Saison 26/27 - Coming soon</div>
+
   <nav class="navbar">
     <a href="/">
       <img src="logo.png" alt="FC Kiischpelt Logo" class="nav-logo" />
@@ -176,7 +208,6 @@
     </div>
   </nav>
 
-<!-- Spielplan -->
 <div class="container">
   <table>
     <thead>
