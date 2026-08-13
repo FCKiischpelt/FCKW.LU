@@ -77,58 +77,60 @@
         flex-direction: column;
         align-items: flex-start;
       }
-
       .nav-links {
         display: none;
         flex-direction: column;
         width: 100%;
         margin-top: 1rem;
       }
-
       .nav-links.active {
         display: flex;
       }
-
       .hamburger {
         display: flex;
       }
-
-      .main-heading h1 {
-        font-size: 1.8rem;
-      }
-
-      .main-heading p {
-        font-size: 1rem;
-      }
     }
 
-    /* Main content */
-    .main-content {
-      flex: 1;
-      display: flex;
-      justify-content: center;
-      align-items: center;
+    /* Sponsoren Section */
+    .sponsoren-section {
       padding: 2rem;
-      flex-direction: column;
       text-align: center;
+      max-width: 1000px;
+      margin: 0 auto;
     }
 
-    .main-content img {
-      max-width: 300px;
-      height: auto;
-      margin-bottom: 2rem;
+    .section-title {
+      font-size: 2rem;
+      margin-top: 2rem;
+      margin-bottom: 1.5rem;
+      color: #ffd700; /* Gold für Platin */
+      border-bottom: 2px solid #ffd700;
+      display: inline-block;
+      padding-bottom: 5px;
     }
 
-    /* Headings */
-    .main-heading h1 {
-      font-size: 2.5rem;
-      margin: 0;
+    .logo-container {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+      justify-content: center;
     }
 
-    .main-heading p {
-      font-size: 1.2rem;
-      margin-top: 0.5rem;
-      color: #ccc;
+    .logo-box {
+      width: 180px;
+      height: 120px;
+      background-color: #ffffff;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 10px;
+      border-radius: 5px;
+    }
+
+    .logo-box img {
+      max-width: 100%;
+      max-height: 100%;
+      object-fit: contain;
     }
   </style>
 </head>
@@ -144,7 +146,7 @@
       <div></div>
       <div></div>
     </div>
-    <div class="nav-links" id="navLinks" aria-label="Hauptnavigation">
+    <div class="nav-links" id="navLinks">
       <a href="/">Home</a>
       <a href="/dauerkaart">Dauerkaart</a>
       <a href="https://fckw.lu/veräin">Veräin</a>
@@ -154,14 +156,17 @@
     </div>
   </nav>
 
-<!-- Main Section -->
-<div class="main-content">
-  <img src="logo.png" alt="FC Kiischpelt Großes Logo" />
-  <div class="main-heading">
-    <h1>FC KIISCHPELT WËLWERWOLZ</h1>
-    <p>Informatiounen iwwert eis Sponsoren kommen no...</p>
+  <!-- Sponsoren Section -->
+  <div class="sponsoren-section">
+    <div class="section-title">PLATIN</div>
+    <div class="logo-container">
+      <div class="logo-box"><img src="https://github.com/user-attachments/assets/0590e541-c451-4443-b30e-39a527aee4b4" alt="MGC"></div>
+      <div class="logo-box"><img src="https://github.com/user-attachments/assets/7a0aa2ef-a32c-4a5b-878b-81217702c234" alt="Kiischpelter Duerfbeier"></div>
+      <div class="logo-box"><img src="https://github.com/user-attachments/assets/b9fa1882-c477-40e5-a8a4-aeb6f9b5e632" alt="ImmoPartner"></div>
+      <div class="logo-box"><img src="https://github.com/user-attachments/assets/4268b696-1994-4780-ac0e-d4f0cf8a9ea9" alt="Biesen"></div>
+      <div class="logo-box"><img src="https://github.com/user-attachments/assets/1e2d80f0-fbe4-4bca-bb30-d6a50c06250b" alt="Schilling"></div>
+    </div>
   </div>
-</div>
 
 <script>
   function toggleMenu() {
