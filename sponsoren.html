@@ -1,3 +1,651 @@
+
+Unterhaltung mit Gemini
+Sortier mit die Liste der Sponsoren als Text ohne das dazugehörige Package, beginnend mit den Sponsoren die das Platin, Gold, Silber, Bronze und Individual Package haben
+
+Es sieht so aus, als hättest du vergessen, die Liste der Sponsoren in deiner Nachricht einzufügen. Bitte teile mir die Liste mit, und ich sortiere sie sofort in der gewünschten Reihenfolge (Platin, Gold, Silber, Bronze, Individual) und ohne die Package-Namen für dich!
+
+Sortierte Sponsorenliste
+Platin
+IMMO-PARTNER Sàrl
+
+MAJERUS GEIMER CONSTRUCTIONS
+
+KIISCHPELTER DUERFBEIER
+
+ELECTRICITE BIESEN
+
+SCHILLING
+
+Gold
+CAMPING VAL D'OR
+
+ELECTRICITE KYLL
+
+YELO-BAU S.A.
+
+HOFFMANN NEU WILWERWILTZ SA
+
+Silber
+RINNEN
+
+MENUISERIE FELLENS
+
+GARAGE JACOBY
+
+Bronze
+WEBER & Cie. S.à r.l.
+
+AGENCE SCHAUS Raymond
+
+BORN & MEYER
+
+FENSTER MERSCH
+
+JANS
+
+TOURIST CENTER CLERVAUX
+
+DUSSMANN
+
+ACS
+
+OPTIQUE CLAUDE BLEY
+
+NESER REUTER (AGENCE FOYER)
+
+GARAGE FELTEN
+
+Individual
+NIESE Verpackungstechnik
+
+MEMORY
+
+CAFE LELLGER STUFF
+
+CAFE BEIM SCHRÄINER
+
+AUTOBUS STEPHANY
+
+HEINTZ VAN LANDEWYCK
+
+WESTER EMWELT & ENERGIE
+
+NORDSTROOSS SHOPPING MILE
+
+Kannst du mir die Logos folgender Sponsoren heraussuchen:
+
+IMMO-PARTNER Sàrl
+
+MAJERUS GEIMER CONSTRUCTIONS
+
+KIISCHPELTER DUERFBEIER
+
+ELECTRICITE BIESEN
+
+SCHILLING 
+
+Als KI-Modell kann ich Ihnen hier keine direkten Bilddateien (Logos) anzeigen oder herunterladen, aber ich kann Ihnen sagen, auf welchen offiziellen Webseiten Sie die Logos der Platin-Sponsoren finden:
+
+IMMO-PARTNER Sàrl: Auf der offiziellen Website des Immobilienunternehmens im Großherzogtum Luxemburg.
+
+Majerus Geimer Constructions: Das Logo ist direkt auf der Startseite ihrer offiziellen Website (majerus-geimer.lu) zu finden.
+
+Kiischpelter Duerfbeier: Das Bier-Label und Logo wurde von der Künstlerin Pelin Agin gestaltet und ist auf der Website kiischpelter-duerfbeier.com zu sehen.
+
+Electricité Biesen S.A.: Das Firmenlogo befindet sich im Header der offiziellen Website electricite-biesen.lu.
+
+Schilling: Zu finden über die offiziellen Firmen- oder Projektpräsenzen des Unternehmens in Luxemburg.
+
+Sie können die Logos in der Regel ganz einfach direkt von deren Webseiten im PNG- oder SVG-Format abrufen, indem Sie die jeweiligen Seiten besuchen.
+
+Wenn ich die Bilder auf der Website einfüge, kann man die auf einer HTML Seite auf einem weissen Hintergrung hinterlegen, der so breit ist, wie das groesste Bild?
+
+Ja, das funktioniert hervorragend und lässt sich mit HTML und CSS umsetzen.
+
+Wenn Logos unterschiedliche Seitenverhältnisse oder Größen haben, sieht es oft unruhig aus, wenn jedes Logo einen unterschiedlich großen, weißen Hintergrund bekommt. Um das zu lösen, gibt es im Wesentlichen zwei Wege:
+
+Methode 1: Feste Einheitsgröße per CSS (Empfohlen)
+Du gibst allen Logo-Containern im CSS exakt dieselbe feste Breite und Höhe (angelehnt an das größte Logo). Das sorgt dafür, dass alle weißen Flächen gleich groß sind und die Logos perfekt zentriert darin liegen.
+
+HTML-Beispiel:
+
+HTML
+<div class="logo-box">
+    <img src="logo-beispiel.png" alt="Sponsor Logo">
+</div>
+CSS-Beispiel:
+
+CSS
+.logo-box {
+    width: 250px;       /* Entspricht der Breite des größten Logos */
+    height: 120px;      /* Entspricht der gewünschten einheitlichen Höhe */
+    background-color: #ffffff; /* Weißer Hintergrund */
+    display: flex;
+    align-items: center;       /* Zentriert das Logo vertikal */
+    justify-content: center;   /* Zentriert das Logo horizontal */
+    padding: 10px;             /* Optionaler Innenabstand */
+    box-sizing: border-box;
+}
+
+.logo-box img {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;       /* Verhindert, dass das Logo verzerrt wird */
+}
+Methode 2: Automatisch über das breiteste Logo
+Wenn du die genaue Pixelbreite des größten Logos nicht hardcoden möchtest, kannst du die Container auch so gestalten, dass sie sich flexibel anpassen. Am saubersten löst man das heutzutage ebenfalls über CSS Flexbox oder Grid, bei dem die Elemente als Raster angeordnet werden. Jedes Element bekommt standardmäßig den weißen Hintergrund und passt sich automatisch an das größte Element in der Reihe an.
+
+Wie lade ich das auf GitHub mit Bildern hoch?
+
+Das Hochladen deines HTML-Projekts inklusive der Bilder auf GitHub ist unkompliziert. Du hast dafür zwei Hauptwege: direkt über den Browser (für den Anfang am schnellsten) oder über die Git-Befehlszeile.
+
+Methode 1: Direkt über den Browser (Ohne Installation)
+Wenn du nur ein paar Dateien hochladen möchtest, geht das am bequemsten direkt auf github.com.
+
+Repository erstellen:
+
+Gehe auf GitHub und logge dich ein.
+
+Klicke oben rechts auf das +-Symbol und wähle New repository.
+
+Gib deinem Projekt einen Namen (z. B. sponsoren-seite).
+
+Wähle Public (öffentlich) oder Private.
+
+Setze einen Haken bei "Add a README file" (das erleichtert das Hochladen).
+
+Klicke auf Create repository.
+
+Dateien hochladen:
+
+Klicke auf der neuen Repository-Seite auf den Button Add file und wähle Upload files.
+
+Wichtig für die Bilder: Erstelle auf deinem Computer am besten vorher einen Ordner (z. B. namens images oder img) und lege dort alle Logo-Bilder hinein.
+
+Ziehe nun deinen HTML-Code (z. B. index.html) und den Bildermöglichkeits-Ordner samt Inhalt per Drag-and-Drop in das Browser-Fenster auf GitHub.
+
+Warte, bis alle Dateien geladen sind.
+
+Klicke unten auf den grünen Button Commit changes.
+
+Wichtiger Hinweis zum Code: Achte darauf, dass die Pfade zu den Bildern in deinem HTML-Code exakt stimmen (z. B. <img src="images/logo-schilling.png" alt="...">). Wenn sich die Bilder im selben Ordner wie die HTML-Datei befinden, reicht einfach der Dateiname (src="logo-schilling.png").
+
+Methode 2: Über die Git-Befehlszeile (Terminal / Git Bash)
+Wenn du professioneller arbeiten möchtest oder das Projekt später aktualisieren willst:
+
+Repository auf GitHub anlegen (wie in Schritt 1 oben beschrieben, aber ohne README-Datei).
+
+Lokalen Ordner vorbereiten: Erstelle auf deinem PC einen Ordner für das Projekt, in dem deine index.html und ein Unterordner mit den Bildern liegen.
+
+Terminal öffnen (in diesem Projektordner) und nacheinander folgende Befehle eingeben:
+
+Bash
+git init
+git add .
+git commit -m "Erstes Projekt mit Sponsoren-Logos"
+git branch -M main
+git remote add origin https://github.com/DEIN-BENUTZERNAME/DEIN-REPOSITORY-NAME.git
+git push -u origin main
+(Ersetze DEIN-BENUTZERNAME und DEIN-REPOSITORY-NAME mit deinen echten GitHub-Daten).
+
+Kann man die READEME file noch später hinzufügen, wenn die Seite bereiets erstellt wurde?
+
+Ja, das ist absolut kein Problem. Du kannst die README.md-Datei jederzeit hinzufügen, egal ob du das Repository gerade erst erstellt hast oder ob es schon seit Monaten existiert.
+
+Hier sind die zwei einfachsten Wege, dies zu tun:
+
+Methode 1: Direkt auf der GitHub-Webseite (am einfachsten)
+Gehe auf die Hauptseite deines Repositories auf GitHub.
+
+Direkt unter dem Namen des Repositories siehst du einen Button mit der Aufschrift "Add README" (dieser erscheint automatisch, wenn noch keine Datei dieses Namens existiert). Wenn dieser Button nicht da ist, klicke auf den Button Add file und wähle Create new file.
+
+Gib der Datei den Namen README.md.
+
+Schreibe deinen Text in das Bearbeitungsfeld. GitHub verwendet Markdown, eine sehr einfache Formatierungssprache.
+
+Scrolle nach unten und klicke auf den grünen Button Commit changes.
+
+Methode 2: Lokal auf deinem Computer
+Wenn du bereits mit Git auf deinem Rechner arbeitest:
+
+Erstelle in deinem lokalen Projektordner einfach eine Textdatei namens README.md.
+
+Öffne sie mit einem Editor deiner Wahl (z. B. VS Code, Notepad, TextEdit) und schreibe deinen Inhalt hinein.
+
+Speichere die Datei.
+
+Öffne dein Terminal (im Projektordner) und führe folgende Befehle aus, um die Datei zu GitHub hochzuladen:
+
+Bash
+git add README.md
+git commit -m "README hinzugefügt"
+git push origin main
+Ein kleiner Tipp für die README.md:
+Da du gerade eine Sponsoren-Seite erstellst, ist es eine gute Idee, in der README kurz zu erklären, worum es auf der Seite geht, wie man sie eventuell selbst bearbeiten kann oder wer die Ansprechpartner sind.
+
+Beispiel für den Inhalt:
+
+Markdown
+# Sponsoren-Übersicht
+
+Dies ist eine einfache HTML-Seite zur Darstellung der Sponsoren für unser Event.
+
+## Technische Details
+- HTML5 & CSS3
+- Flexbox für die Logo-Anordnung
+
+## Anleitung
+Um Logos hinzuzufügen, lade die Datei einfach in den Ordner `/images` hoch und ergänze den entsprechenden `<img>`-Tag in der `index.html`.
+GitHub zeigt den Inhalt der README.md-Datei automatisch auf der Startseite deines Repositories an, was es für andere (oder für dich selbst als Notiz) viel übersichtlicher macht.
+
+Wurde gemacht:
+
+<img width="617" height="324" alt="MGC" src="https://github.com/user-attachments/assets/0590e541-c451-4443-b30e-39a527aee4b4" />
+
+<img width="980" height="472" alt="Kiischpelter Duerfbeier" src="https://github.com/user-attachments/assets/7a0aa2ef-a32c-4a5b-878b-81217702c234" />
+
+<img width="204" height="192" alt="ImmoPartner" src="https://github.com/user-attachments/assets/b9fa1882-c477-40e5-a8a4-aeb6f9b5e632" />
+
+<img width="485" height="298" alt="Biesen" src="https://github.com/user-attachments/assets/4268b696-1994-4780-ac0e-d4f0cf8a9ea9" />
+
+<img width="225" height="225" alt="Schilling" src="https://github.com/user-attachments/assets/1e2d80f0-fbe4-4bca-bb30-d6a50c06250b" />
+
+.
+
+Das sieht super aus! Die Grafiken für Majerus Geimer Constructions, Kiischpelter Duerfbeier, ImmoPartner, Electricité Biesen und Schilling sind erfolgreich hinterlegt.
+
+Möchtest du als Nächstes den passenden HTML- und CSS-Code für deine Seite anpassen, damit die Logos mit deinen neuen Bildern und dem einheitlichen weißen Hintergrund perfekt dargestellt werden?
+
+Hier ist der Code der Seite, kannst du mir das so erstellen, dass die genannten Logos in eine Reihe mit weißem Hintergrund sind unter einer Rubrik mit dem Namen PLATIN
+
+Hier ist der HTML-Code für deine Platin-Sponsoren. Ich habe eine Rubrik „PLATIN“ erstellt und die Logos in einheitliche weiße Boxen (200x150px) gepackt, damit sie alle gleich groß wirken und sauber in einer Reihe stehen.
+
+Deine HTML-Datei ist fertig:
+
+HTML-Symbol
+sponsoren
+ HTML 
+Geöffnet
+So nutzt du den Code:
+Kopiere den gesamten Inhalt der generierten sponsoren.html Datei.
+
+Wenn du schon eine index.html auf GitHub hast, füge diesen Teil dort unter der passenden Stelle ein.
+
+Die CSS-Styles im <style>-Bereich sorgen dafür, dass die Logos zentriert und mit weißem Hintergrund dargestellt werden. Wenn du die Größe der Boxen ändern möchtest, kannst du einfach die width und height Werte im CSS (.logo-box) anpassen.
+
+Hier ist der alte Code, bitte anhand von diesem die Logo einfügen:
+
+<!DOCTYPE html>
+
+<html lang="lb">
+
+<head>
+
+  <meta charset="UTF-8" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <title>Sponsoren – FC KIISCHPELT WËLWERWOLZ</title>
+
+  <style>
+
+    body {
+
+      margin: 0;
+
+      background-color: #000;
+
+      color: #fff;
+
+      font-family: Arial, sans-serif;
+
+      display: flex;
+
+      flex-direction: column;
+
+      min-height: 100vh;
+
+    }
+
+
+
+    /* Navigation Styles */
+
+    .navbar {
+
+      width: 100%;
+
+      background-color: #111;
+
+      display: flex;
+
+      justify-content: space-between;
+
+      align-items: center;
+
+      padding: 1rem 2rem;
+
+      box-sizing: border-box;
+
+      flex-wrap: wrap;
+
+      position: relative;
+
+      z-index: 1000;
+
+    }
+
+
+
+    .nav-logo {
+
+      height: 40px;
+
+      cursor: pointer;
+
+      flex-shrink: 0;
+
+    }
+
+
+
+    .nav-links {
+
+      display: flex;
+
+      flex-wrap: wrap;
+
+      gap: 1.5rem;
+
+      align-items: center;
+
+      justify-content: flex-end;
+
+      flex-grow: 1;
+
+    }
+
+
+
+    .nav-links a {
+
+      color: white;
+
+      text-decoration: none;
+
+      font-weight: bold;
+
+      text-transform: uppercase;
+
+      font-size: 1rem;
+
+      transition: color 0.3s;
+
+      white-space: nowrap;
+
+    }
+
+
+
+    .nav-links a:hover {
+
+      color: #ccc;
+
+    }
+
+
+
+    /* Mobile Optimierung */
+
+    .hamburger {
+
+      display: none;
+
+      flex-direction: column;
+
+      cursor: pointer;
+
+      gap: 5px;
+
+    }
+
+
+
+    .hamburger div {
+
+      width: 25px;
+
+      height: 3px;
+
+      background-color: white;
+
+    }
+
+
+
+    @media (max-width: 768px) {
+
+      .navbar {
+
+        flex-direction: column;
+
+        align-items: flex-start;
+
+      }
+
+
+
+      .nav-links {
+
+        display: none;
+
+        flex-direction: column;
+
+        width: 100%;
+
+        margin-top: 1rem;
+
+      }
+
+
+
+      .nav-links.active {
+
+        display: flex;
+
+      }
+
+
+
+      .hamburger {
+
+        display: flex;
+
+      }
+
+
+
+      .main-heading h1 {
+
+        font-size: 1.8rem;
+
+      }
+
+
+
+      .main-heading p {
+
+        font-size: 1rem;
+
+      }
+
+    }
+
+
+
+    /* Main content */
+
+    .main-content {
+
+      flex: 1;
+
+      display: flex;
+
+      justify-content: center;
+
+      align-items: center;
+
+      padding: 2rem;
+
+      flex-direction: column;
+
+      text-align: center;
+
+    }
+
+
+
+    .main-content img {
+
+      max-width: 300px;
+
+      height: auto;
+
+      margin-bottom: 2rem;
+
+    }
+
+
+
+    /* Headings */
+
+    .main-heading h1 {
+
+      font-size: 2.5rem;
+
+      margin: 0;
+
+    }
+
+
+
+    .main-heading p {
+
+      font-size: 1.2rem;
+
+      margin-top: 0.5rem;
+
+      color: #ccc;
+
+    }
+
+  </style>
+
+</head>
+
+<body>
+
+
+
+  <!-- Navigation -->
+
+  <nav class="navbar">
+
+    <a href="/">
+
+      <img src="logo.png" alt="FC Kiischpelt Logo" class="nav-logo" />
+
+    </a>
+
+    <div class="hamburger" onclick="toggleMenu()">
+
+      <div></div>
+
+      <div></div>
+
+      <div></div>
+
+    </div>
+
+    <div class="nav-links" id="navLinks" aria-label="Hauptnavigation">
+
+      <a href="/">Home</a>
+
+      <a href="/dauerkaart">Dauerkaart</a>
+
+      <a href="https://fckw.lu/veräin">Veräin</a>
+
+      <a href="https://fckw.lu/spillplang">Spillplang</a>
+
+      <a href="/sponsoren">Sponsoren</a>
+
+      <a href="/socialmedia">Social Media</a>
+
+    </div>
+
+  </nav>
+
+
+
+<!-- Main Section -->
+
+<div class="main-content">
+
+  <img src="logo.png" alt="FC Kiischpelt Großes Logo" />
+
+  <div class="main-heading">
+
+    <h1>FC KIISCHPELT WËLWERWOLZ</h1>
+
+    <p>Informatiounen iwwert eis Sponsoren kommen no...</p>
+
+  </div>
+
+</div>
+
+
+
+<script>
+
+  function toggleMenu() {
+
+    const nav = document.getElementById('navLinks');
+
+    nav.classList.toggle('active');
+
+  }
+
+</script>
+
+
+
+</body>
+
+</html>
+
+Ich habe deinen bestehenden Code genommen und die Platin-Sponsoren-Rubrik sauber integriert. Die Logos sind nun in einem einheitlichen Raster mit weißem Hintergrund angeordnet, passend zu deinem Design.
+
+Du kannst die Datei hier herunterladen:
+
+HTML-Symbol
+sponsoren_page
+ HTML 
+Geöffnet
+Was ich im Code geändert habe:
+Sponsoren-Bereich hinzugefügt: Ich habe die neue Sektion .sponsoren-section unter der Navigation platziert.
+
+Einheitliche Boxen: Die Logos sitzen nun in .logo-box-Containern (180x120px) mit weißem Hintergrund, damit sie auch auf deinem schwarzen Hintergrund optimal aussehen.
+
+Flexibles Layout: Ich habe flex-wrap: wrap verwendet, damit die Logos auf Mobilgeräten automatisch untereinander rutschen, wenn der Platz nicht reicht.
+
+Du kannst diesen neuen HTML-Code jetzt einfach anstelle deines alten Codes verwenden oder den entsprechenden Teil in deine Seite kopieren.
+
+Bitte auf englisch
+
+Here is the updated HTML code with the Platin sponsor logos integrated into your design:  
+HTML
+
+HTML
 <!DOCTYPE html>
 <html lang="lb">
 <head>
@@ -177,3 +825,214 @@
 
 </body>
 </html>
+Sieht super aus!
+
+Jetzt noch die Schrift "PLATIN" in Großbuchstaben und fettgeschrieben und unterstrichen.
+
+Dann als Überschrift, in weisser Farbe: Sponsoren Saison 2026-2027
+
+The code has been updated!
+
+I have added the white heading "Sponsoren Saison 2026-2027" at the top of the section. The "PLATIN" title is now bold, in uppercase, and underlined as requested.
+
+You can download the updated file here:
+
+HTML-Symbol
+sponsoren_final
+ HTML 
+Geöffnet
+
+
+
+Gemini ist eine KI und kann Fehler machen, auch bei Informationen über Personen. Datenschutz und GeminiWird in einem neuen Fenster geöffnet
+
+<!DOCTYPE html>
+<html lang="lb">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Sponsoren – FC KIISCHPELT WËLWERWOLZ</title>
+  <style>
+    body {
+      margin: 0;
+      background-color: #000;
+      color: #fff;
+      font-family: Arial, sans-serif;
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
+    }
+
+    /* Navigation Styles */
+    .navbar {
+      width: 100%;
+      background-color: #111;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 1rem 2rem;
+      box-sizing: border-box;
+      flex-wrap: wrap;
+      position: relative;
+      z-index: 1000;
+    }
+
+    .nav-logo {
+      height: 40px;
+      cursor: pointer;
+      flex-shrink: 0;
+    }
+
+    .nav-links {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1.5rem;
+      align-items: center;
+      justify-content: flex-end;
+      flex-grow: 1;
+    }
+
+    .nav-links a {
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+      text-transform: uppercase;
+      font-size: 1rem;
+      transition: color 0.3s;
+      white-space: nowrap;
+    }
+
+    .nav-links a:hover {
+      color: #ccc;
+    }
+
+    /* Mobile Optimierung */
+    .hamburger {
+      display: none;
+      flex-direction: column;
+      cursor: pointer;
+      gap: 5px;
+    }
+
+    .hamburger div {
+      width: 25px;
+      height: 3px;
+      background-color: white;
+    }
+
+    @media (max-width: 768px) {
+      .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+      .nav-links {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        margin-top: 1rem;
+      }
+      .nav-links.active {
+        display: flex;
+      }
+      .hamburger {
+        display: flex;
+      }
+    }
+
+    /* Sponsoren Section */
+    .sponsoren-section {
+      padding: 2rem;
+      text-align: center;
+      max-width: 1000px;
+      margin: 0 auto;
+    }
+
+    .main-title {
+      font-size: 2.5rem;
+      color: #ffffff;
+      margin-bottom: 2rem;
+    }
+
+    .section-title {
+      font-size: 1.8rem;
+      font-weight: bold;
+      text-transform: uppercase;
+      text-decoration: underline;
+      margin-top: 2rem;
+      margin-bottom: 1.5rem;
+      color: #ffd700; /* Gold */
+      display: inline-block;
+    }
+
+    .logo-container {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+      justify-content: center;
+    }
+
+    .logo-box {
+      width: 180px;
+      height: 120px;
+      background-color: #ffffff;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 10px;
+      border-radius: 5px;
+    }
+
+    .logo-box img {
+      max-width: 100%;
+      max-height: 100%;
+      object-fit: contain;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Navigation -->
+  <nav class="navbar">
+    <a href="/">
+      <img src="logo.png" alt="FC Kiischpelt Logo" class="nav-logo" />
+    </a>
+    <div class="hamburger" onclick="toggleMenu()">
+      <div></div>
+      <div></div>
+      <div></div>
+    </div>
+    <div class="nav-links" id="navLinks">
+      <a href="/">Home</a>
+      <a href="/dauerkaart">Dauerkaart</a>
+      <a href="https://fckw.lu/veräin">Veräin</a>
+      <a href="https://fckw.lu/spillplang">Spillplang</a>
+      <a href="/sponsoren">Sponsoren</a>
+      <a href="/socialmedia">Social Media</a>
+    </div>
+  </nav>
+
+  <!-- Sponsoren Section -->
+  <div class="sponsoren-section">
+    <h1 class="main-title">Sponsoren Saison 2026-2027</h1>
+    
+    <div class="section-title">PLATIN</div>
+    <div class="logo-container">
+      <div class="logo-box"><img src="https://github.com/user-attachments/assets/0590e541-c451-4443-b30e-39a527aee4b4" alt="MGC"></div>
+      <div class="logo-box"><img src="https://github.com/user-attachments/assets/7a0aa2ef-a32c-4a5b-878b-81217702c234" alt="Kiischpelter Duerfbeier"></div>
+      <div class="logo-box"><img src="https://github.com/user-attachments/assets/b9fa1882-c477-40e5-a8a4-aeb6f9b5e632" alt="ImmoPartner"></div>
+      <div class="logo-box"><img src="https://github.com/user-attachments/assets/4268b696-1994-4780-ac0e-d4f0cf8a9ea9" alt="Biesen"></div>
+      <div class="logo-box"><img src="https://github.com/user-attachments/assets/1e2d80f0-fbe4-4bca-bb30-d6a50c06250b" alt="Schilling"></div>
+    </div>
+  </div>
+
+<script>
+  function toggleMenu() {
+    const nav = document.getElementById('navLinks');
+    nav.classList.toggle('active');
+  }
+</script>
+
+</body>
+</html>
+sponsoren_final.html
+sponsoren_final.html wird angezeigt.
