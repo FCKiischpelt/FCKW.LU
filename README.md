@@ -5,14 +5,20 @@ PLATIN
 <img width="485" height="298" alt="Biesen" src="https://github.com/user-attachments/assets/4268b696-1994-4780-ac0e-d4f0cf8a9ea9" />
 <img width="225" height="225" alt="Schilling" src="https://github.com/user-attachments/assets/1e2d80f0-fbe4-4bca-bb30-d6a50c06250b" />
 <img width="447" height="447" alt="Garage Jacoby" src="https://github.com/user-attachments/assets/84ab2e85-b432-4c21-ba12-9ce87a0848e6" />
+<img width="554" height="551" alt="Zenner Sven" src="https://github.com/user-attachments/assets/94e0dbdd-2f5f-4c12-94cc-c4669e57c57c" />
+
 GOLD
 <img width="135" height="135" alt="Yelo Bau" src="https://github.com/user-attachments/assets/be6ec33b-85a3-4f89-afde-3bff3c1a231e" />
 <img width="340" height="93" alt="Kyll" src="https://github.com/user-attachments/assets/486eb057-2c16-4f15-b511-9a12be647148" />
 <img width="300" height="74" alt="Hoffmann Neu" src="https://github.com/user-attachments/assets/28c8e8cd-c582-41ae-8ca0-3c83b02ce5e2" />
 <img width="285" height="91" alt="Camping Val d&#39;Or" src="https://github.com/user-attachments/assets/01dcf3ba-504a-4b94-b88b-3797aacf5dc4" />
+<img width="447" height="447" alt="M2Elementer" src="https://github.com/user-attachments/assets/c613f283-df99-4c4f-9cd4-b570b37a79a9" />
+
+
 SILBER
 <img width="246" height="144" alt="Rinnen" src="https://github.com/user-attachments/assets/ae639603-32cf-40a3-8c9c-dff722c5fae9" />
 <img width="225" height="225" alt="Fellens" src="https://github.com/user-attachments/assets/816a6d6d-4e11-4722-8d6e-e4d129c96bf3" />
+
 BRONZE
 <img width="531" height="376" alt="Fenster Mersch" src="https://github.com/user-attachments/assets/cd263ec9-2b02-4a70-bf65-326110897f4e" />
 <img width="536" height="373" alt="Felten" src="https://github.com/user-attachments/assets/6916260f-6a26-43dd-a027-783f8a012095" />
