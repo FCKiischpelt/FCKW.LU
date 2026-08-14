@@ -7,7 +7,6 @@ permalink: /matchball
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <!-- Titel angepasst, da dies die Matchball-Seite ist -->
   <title>Matchball – FC KIISCHPELT WËLWERWOLZ</title>
   <style>
     body {
@@ -105,18 +104,18 @@ permalink: /matchball
       }
     }
 
-    /* --- NEUE STYLES FÜR DEN BANNER --- */
+    /* Styles für den Banner */
     .coming-soon-banner {
       width: 100%;
-      background-color: #dc2626; /* Ein schönes Rot (Tailwind Red 600) */
+      background-color: #dc2626;
       color: white;
-      padding: 3rem 1rem; /* Oben/Unten 3rem, Links/Rechts 1rem */
+      padding: 3rem 1rem;
       text-align: center;
       box-sizing: border-box;
       display: flex;
       justify-content: center;
       align-items: center;
-      margin-top: 2px; /* Kleine Trennung zur Navbar */
+      margin-top: 2px;
     }
 
     .coming-soon-text {
@@ -127,7 +126,21 @@ permalink: /matchball
       margin: 0;
     }
 
-    /* Responsives Verhalten für den Text auf kleinen Bildschirmen */
+    /* Styles für den Bild-Container */
+    .image-container {
+      width: 100%;
+      text-align: center;
+      padding: 3rem 1rem;
+      box-sizing: border-box;
+    }
+
+    .image-container img {
+      max-width: 100%;
+      height: auto;
+      border-radius: 8px;
+      box-shadow: 0 0 15px rgba(255, 255, 255, 0.1);
+    }
+
     @media (max-width: 600px) {
       .coming-soon-text {
         font-size: 1.8rem;
@@ -136,7 +149,6 @@ permalink: /matchball
         padding: 2rem 1rem;
       }
     }
-    /* ---------------------------------- */
 
     .main-content {
       flex: 1;
@@ -147,33 +159,6 @@ permalink: /matchball
       flex-direction: column;
       max-width: 900px;
       margin: 0 auto;
-    }
-
-    .main-heading {
-      width: 100%;
-      text-align: left;
-      line-height: 1.4;
-      margin-top: 0;
-    }
-
-    .main-heading h1 {
-      font-size: 2.2rem;
-      margin-top: 0;
-      margin-bottom: 2rem;
-      text-align: center;
-    }
-
-    .main-heading h2 {
-      font-size: 1.4rem;
-      margin-top: 2rem;
-      margin-bottom: 1.2rem;
-      text-align: center;
-    }
-
-    .main-heading p {
-      font-size: 1rem;
-      margin: 0.3rem 0 0.8rem;
-      color: #ccc;
     }
   </style>
 </head>
@@ -199,13 +184,15 @@ permalink: /matchball
     </div>
   </nav>
 
-  <!-- --- HIER BEGINNT DER BANNER --- -->
+  <!-- Banner -->
   <div class="coming-soon-banner">
     <h1 class="coming-soon-text">Coming Soon</h1>
   </div>
-  <!-- ------------------------------ -->
 
-  <!-- Der restliche Inhalt der Seite (falls vorhanden) kommt hier hin -->
+  <!-- Bild unter dem Banner -->
+  <div class="image-container">
+    <img width="225" height="225" alt="Matchball 2627" src="https://github.com/user-attachments/assets/94f0d75f-061d-4af9-b781-46c68c60a3de" />
+  </div>
 
   <script>
     function toggleMenu() {
