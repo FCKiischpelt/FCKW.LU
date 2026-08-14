@@ -7,7 +7,8 @@ permalink: /matchball
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Veräin – FC KIISCHPELT WËLWERWOLZ</title>
+  <!-- Titel angepasst, da dies die Matchball-Seite ist -->
+  <title>Matchball – FC KIISCHPELT WËLWERWOLZ</title>
   <style>
     body {
       margin: 0;
@@ -104,6 +105,39 @@ permalink: /matchball
       }
     }
 
+    /* --- NEUE STYLES FÜR DEN BANNER --- */
+    .coming-soon-banner {
+      width: 100%;
+      background-color: #dc2626; /* Ein schönes Rot (Tailwind Red 600) */
+      color: white;
+      padding: 3rem 1rem; /* Oben/Unten 3rem, Links/Rechts 1rem */
+      text-align: center;
+      box-sizing: border-box;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-top: 2px; /* Kleine Trennung zur Navbar */
+    }
+
+    .coming-soon-text {
+      font-size: 2.5rem;
+      font-weight: bold;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+      margin: 0;
+    }
+
+    /* Responsives Verhalten für den Text auf kleinen Bildschirmen */
+    @media (max-width: 600px) {
+      .coming-soon-text {
+        font-size: 1.8rem;
+      }
+      .coming-soon-banner {
+        padding: 2rem 1rem;
+      }
+    }
+    /* ---------------------------------- */
+
     .main-content {
       flex: 1;
       display: flex;
@@ -132,7 +166,7 @@ permalink: /matchball
     .main-heading h2 {
       font-size: 1.4rem;
       margin-top: 2rem;
-      margin-bottom: 1.2rem; /* Mehr Abstand zum folgenden Text */
+      margin-bottom: 1.2rem;
       text-align: center;
     }
 
@@ -165,6 +199,13 @@ permalink: /matchball
     </div>
   </nav>
 
+  <!-- --- HIER BEGINNT DER BANNER --- -->
+  <div class="coming-soon-banner">
+    <h1 class="coming-soon-text">Coming Soon</h1>
+  </div>
+  <!-- ------------------------------ -->
+
+  <!-- Der restliche Inhalt der Seite (falls vorhanden) kommt hier hin -->
 
   <script>
     function toggleMenu() {
