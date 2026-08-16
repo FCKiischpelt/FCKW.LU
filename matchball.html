@@ -94,14 +94,6 @@ permalink: /matchball
       .hamburger {
         display: flex;
       }
-
-      .main-heading h1 {
-        font-size: 1.8rem;
-      }
-
-      .main-heading p {
-        font-size: 1rem;
-      }
     }
 
     /* Styles für den Banner */
@@ -130,7 +122,7 @@ permalink: /matchball
     .image-container {
       width: 100%;
       text-align: center;
-      padding: 3rem 1rem;
+      padding: 3rem 1rem 1rem 1rem;
       box-sizing: border-box;
     }
 
@@ -150,15 +142,62 @@ permalink: /matchball
       }
     }
 
+    /* Styles für den Hauptinhalt / Text */
     .main-content {
       flex: 1;
-      display: flex;
-      justify-content: center;
-      align-items: flex-start;
-      padding: 0 1.5rem;
-      flex-direction: column;
-      max-width: 900px;
+      width: 100%;
+      max-width: 800px;
       margin: 0 auto;
+      padding: 2rem 1.5rem 4rem 1.5rem;
+      box-sizing: border-box;
+      line-height: 1.6;
+    }
+
+    .main-content h2 {
+      font-size: 1.8rem;
+      color: #dc2626;
+      margin-top: 0;
+      margin-bottom: 1.5rem;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+    }
+
+    .main-content h3 {
+      font-size: 1.3rem;
+      margin-top: 1.5rem;
+      margin-bottom: 0.5rem;
+      color: #fff;
+    }
+
+    .main-content p {
+      font-size: 1.1rem;
+      margin-bottom: 1rem;
+      color: #ddd;
+    }
+
+    .highlight-box {
+      background-color: #111;
+      border-left: 4px solid #dc2626;
+      padding: 1.2rem;
+      margin: 1.5rem 0;
+      border-radius: 0 8px 8px 0;
+    }
+
+    .highlight-box p {
+      margin: 0;
+      font-weight: bold;
+      color: #fff;
+      font-size: 1.2rem;
+    }
+
+    .main-content a {
+      color: #dc2626;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    .main-content a:hover {
+      text-decoration: underline;
     }
   </style>
 </head>
@@ -186,13 +225,28 @@ permalink: /matchball
 
   <!-- Banner -->
   <div class="coming-soon-banner">
-    <h1 class="coming-soon-text">Coming Soon</h1>
+    <h1 class="coming-soon-text">Matchball FC Kiischpelt - Saison 2026 / 2027</h1>
   </div>
 
   <!-- Bild unter dem Banner -->
   <div class="image-container">
     <img width="225" height="225" alt="Matchball 2627" src="https://github.com/user-attachments/assets/94f0d75f-061d-4af9-b781-46c68c60a3de" />
   </div>
+
+  <!-- Hauptinhalt (Text) -->
+  <main class="main-content">
+    <h3>Wat heescht dat genau?</h3>
+    <p>Dir maacht virum Match eng Foto zesumme mat de Kapitäne vun de béiden Equipe an dem Arbitter.</p>
+    <p>Dir selwer oder eng Persoun déi dir decidéiert mécht den Ustouss virum Heemmatch vum FC KIISCHPELT.</p>
+
+    <div class="highlight-box">
+      <p>1 Matchball = 100 € - Domat ënnerstëtzt dir eis als Veräin souwéi eisen Challenge an der 2. Divisioun.</p>
+    </div>
+
+    <p>Mëllt iech per Facebook / Instagram oder bei engem Member vum FC KIISCHPELT.</p>
+
+    <p>De Spillplang fannt dir an der Rubrik <a href="https://fckw.lu/spillplang">SPILLPLANG</a>.</p>
+  </main>
 
   <script>
     function toggleMenu() {
