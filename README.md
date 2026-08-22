@@ -42,5 +42,5 @@ Spillpang
 <img width="514" height="595" alt="Logo FLF Roude Leiw" src="https://github.com/user-attachments/assets/0422834b-d6dd-4fd2-a89b-491e3b5629d1" />
 
 Social Media
-<img width="1024" height="1024" alt="facebook-icon-png-774" src="https://github.com/user-attachments/assets/6a78bdd9-c92c-4b83-836f-5684d91a7dd0" />
-<img width="447" height="447" alt="images" src="https://github.com/user-attachments/assets/8f54a6f0-6c1d-4e08-babc-4befa5d405a2" />
+<img width="1024" height="1024" alt="Logo Facebook" src="https://github.com/user-attachments/assets/6a78bdd9-c92c-4b83-836f-5684d91a7dd0" />
+<img width="447" height="447" alt="Logo Instagram" src="https://github.com/user-attachments/assets/8f54a6f0-6c1d-4e08-babc-4befa5d405a2" />
