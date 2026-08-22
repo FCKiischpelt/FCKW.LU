@@ -10,55 +10,6 @@
       background-color: #000;
       color: #fff;
       font-family: Arial, sans-serif;
-      position: relative;
-    }
-
-    /* --- VOLLBILD DIAGONAL OVERLAY --- */
-    .diagonal-overlay {
-      position: fixed;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
-      z-index: 9999;
-      pointer-events: none;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      overflow: hidden;
-    }
-
-    .diagonal-overlay::before {
-      content: "";
-      position: absolute;
-      width: 150%;
-      height: 120px;
-      background-color: #d32f2f;
-      transform: rotate(-35deg);
-      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.7);
-    }
-
-    .diagonal-text {
-      position: absolute;
-      color: #ffffff;
-      font-size: 4.5rem;
-      font-weight: 900;
-      text-transform: uppercase;
-      letter-spacing: 4px;
-      white-space: nowrap;
-      transform: rotate(-35deg);
-      text-shadow: 3px 3px 10px rgba(0, 0, 0, 0.6);
-      font-family: 'Impact', 'Arial Black', sans-serif;
-    }
-
-    @media (max-width: 768px) {
-      .diagonal-overlay::before {
-        height: 70px;
-      }
-      .diagonal-text {
-        font-size: 1.8rem;
-        letter-spacing: 2px;
-      }
     }
 
     .navbar {
@@ -204,7 +155,7 @@
       text-transform: uppercase;
     }
 
-    /* Responsive Tabelle */
+    /* Responsive Tabelle für Mobilgeräte */
     @media (max-width: 768px) {
       table, thead, tbody, th, td, tr {
         display: block;
@@ -245,6 +196,7 @@
 </head>
 <body>
 
+  <!-- Navigation -->
   <nav class="navbar">
     <a href="/">
       <img src="logo.png" alt="FC Kiischpelt Logo" class="nav-logo" />
@@ -267,6 +219,7 @@
 
 <div class="container">
 
+  <!-- Header-Banner mit Logos -->
   <div class="header-banner">
     <img class="header-logo" alt="Logo FLF" src="https://github.com/user-attachments/assets/e5e75f33-8e52-4a41-b201-eec92ea928c2" />
     <h1>2.Division - 1.Bezirk</h1>
@@ -284,4 +237,41 @@
       </tr>
     </thead>
     <tbody>
-      <tr><td>23.08.2026</td><td>16:00</td><td>1</td><td>Kiischpelt Wilwer
+      <tr><td>23.08.2026</td><td>16:00</td><td>1</td><td>Kiischpelt Wilwerwiltz - CS Bourscheid</td><td>A Millefeld (Wilwerwiltz)</td></tr>
+      <tr><td>30.08.2026</td><td>16:00</td><td>2</td><td>FC Biekerech - Kiischpelt Wilwerwiltz</td><td>Stade Maemerich (Beckerich)</td></tr>
+      <tr><td>13.09.2026</td><td>16:00</td><td>3</td><td>Kiischpelt Wilwerwiltz - Orania Vianden</td><td>A Millefeld (Wilwerwiltz)</td></tr>
+      <tr><td>27.09.2026</td><td>16:00</td><td>4</td><td>Racing Heiderscheid-Eschdorf - Kiischpelt Wilwerwiltz</td><td>Stade Um Quatre-Vents (Eschdorf, synth.)</td></tr>
+      <tr><td>04.10.2026</td><td>16:00</td><td>5</td><td>FC Pratzerthal-Redange - Kiischpelt Wilwerwiltz</td><td>Terrain An Der Seitert (Redange)</td></tr>
+      <tr><td>11.10.2026</td><td>16:00</td><td>6</td><td>Kiischpelt Wilwerwiltz - AS Wincrange</td><td>A Millefeld (Wilwerwiltz)</td></tr>
+      <tr><td>18.10.2026</td><td>16:00</td><td>7</td><td>US Reisdorf - Kiischpelt Wilwerwiltz</td><td>Terrain An der Ee (Reisdorf)</td></tr>
+      <tr><td>25.10.2026</td><td>16:00</td><td>8</td><td>Kiischpelt Wilwerwiltz - SC Ell</td><td>A Millefeld (Wilwerwiltz)</td></tr>
+      <tr><td>31.10.2026</td><td>18:00</td><td>9</td><td>AS Rupensia Lusitanos Larochette - Kiischpelt Wilwerwiltz</td><td>Terrain Op Birkelt (Larochette, synth.)</td></tr>
+      <tr><td>15.11.2026</td><td>16:00</td><td>10</td><td>Kiischpelt Wilwerwiltz - FC Bastendorf 47</td><td>A Millefeld (Wilwerwiltz)</td></tr>
+      <tr><td>22.11.2026</td><td>16:00</td><td>11</td><td>US Boevange-Attert - Kiischpelt Wilwerwiltz</td><td>Stade Am Letschert (Boevange)</td></tr>
+      <tr><td>29.11.2026</td><td>16:00</td><td>12</td><td>Kiischpelt Wilwerwiltz - US Rambrouch</td><td>A Millefeld (Wilwerwiltz)</td></tr>
+      <tr><td>06.12.2026</td><td>16:00</td><td>13</td><td>Racing Troisvierges - Kiischpelt Wilwerwiltz</td><td>Stade Op der Kopp (Troisvierges)</td></tr>
+      <tr><td>28.02.2027</td><td>16:00</td><td>14</td><td>Kiischpelt Wilwerwiltz - FC Biekerech</td><td>A Millefeld (Wilwerwiltz)</td></tr>
+      <tr><td>07.03.2027</td><td>16:00</td><td>15</td><td>Orania Vianden - Kiischpelt Wilwerwiltz</td><td>Stade Am Komp (Vianden)</td></tr>
+      <tr><td>14.03.2027</td><td>16:00</td><td>16</td><td>Kiischpelt Wilwerwiltz - Racing Heiderscheid-Eschdorf</td><td>A Millefeld (Wilwerwiltz)</td></tr>
+      <tr><td>21.03.2027</td><td>16:00</td><td>17</td><td>Kiischpelt Wilwerwiltz - FC Pratzerthal-Redange</td><td>A Millefeld (Wilwerwiltz)</td></tr>
+      <tr><td>27.03.2027</td><td>18:00</td><td>18</td><td>AS Wincrange - Kiischpelt Wilwerwiltz</td><td>Stade Henri Lamborelle (Wincrange)</td></tr>
+      <tr><td>04.04.2027</td><td>16:00</td><td>19</td><td>Kiischpelt Wilwerwiltz - US Reisdorf</td><td>A Millefeld (Wilwerwiltz)</td></tr>
+      <tr><td>11.04.2027</td><td>16:00</td><td>20</td><td>SC Ell - Kiischpelt Wilwerwiltz</td><td>Terrain Um Essig (Ell)</td></tr>
+      <tr><td>18.04.2027</td><td>16:00</td><td>21</td><td>Kiischpelt Wilwerwiltz - AS Rupensia Lusitanos Larochette</td><td>A Millefeld (Wilwerwiltz)</td></tr>
+      <tr><td>25.04.2027</td><td>16:00</td><td>22</td><td>FC Bastendorf 47 - Kiischpelt Wilwerwiltz</td><td>Millewiss (Bastendorf)</td></tr>
+      <tr><td>02.05.2027</td><td>16:00</td><td>23</td><td>Kiischpelt Wilwerwiltz - US Boevange-Attert</td><td>A Millefeld (Wilwerwiltz)</td></tr>
+      <tr><td>09.05.2027</td><td>16:00</td><td>24</td><td>US Rambrouch - Kiischpelt Wilwerwiltz</td><td>Terrain Rambrouch</td></tr>
+      <tr><td>15.05.2027</td><td>18:00</td><td>25</td><td>Kiischpelt Wilwerwiltz - Racing Troisvierges</td><td>A Millefeld (Wilwerwiltz)</td></tr>
+      <tr><td>23.05.2027</td><td>16:00</td><td>26</td><td>CS Bourscheid - Kiischpelt Wilwerwiltz</td><td>Terrain In Der Ae (Bourscheid/Michelau)</td></tr>
+    </tbody>
+  </table>
+</div>
+
+<script>
+  function toggleMenu() {
+    document.getElementById("navLinks").classList.toggle("active");
+  }
+</script>
+
+</body>
+</html>
