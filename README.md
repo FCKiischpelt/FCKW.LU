@@ -43,4 +43,4 @@ Spillpang
 
 Social Media
 <img width="1024" height="1024" alt="Logo Facebook" src="https://github.com/user-attachments/assets/6a78bdd9-c92c-4b83-836f-5684d91a7dd0" />
-<img width="447" height="447" alt="Logo Instagram" src="https://github.com/user-attachments/assets/8f54a6f0-6c1d-4e08-babc-4befa5d405a2" />
+<img width="512" height="512" alt="Logo Instagram" src="https://github.com/user-attachments/assets/83c7c55e-cf0e-4fc4-880c-4caf172a28ec" />
