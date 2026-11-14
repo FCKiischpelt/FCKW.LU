@@ -6,6 +6,8 @@ PLATIN
 <img width="225" height="225" alt="Schilling" src="https://github.com/user-attachments/assets/1e2d80f0-fbe4-4bca-bb30-d6a50c06250b" />
 <img width="447" height="447" alt="Garage Jacoby" src="https://github.com/user-attachments/assets/84ab2e85-b432-4c21-ba12-9ce87a0848e6" />
 <img width="554" height="551" alt="Zenner Sven" src="https://github.com/user-attachments/assets/94e0dbdd-2f5f-4c12-94cc-c4669e57c57c" />
+<img width="2125" height="1725" alt="Logo agence Henri Braun et Associés-vecto" src="https://github.com/user-attachments/assets/e380e8e4-4b7f-464f-a6e2-385618f2784c" />
+
 
 GOLD
 <img width="135" height="135" alt="Yelo Bau" src="https://github.com/user-attachments/assets/be6ec33b-85a3-4f89-afde-3bff3c1a231e" />
