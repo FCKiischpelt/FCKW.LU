@@ -1,0 +1,206 @@
+---
+permalink: /fanspecial
+---
+
+<!DOCTYPE html>
+<html lang="lb">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>12% Fan-Special – FC KIISCHPELT WËLWERWOLZ</title>
+  <style>
+    body {
+      margin: 0;
+      background-color: #000;
+      color: #fff;
+      font-family: Arial, sans-serif;
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
+    }
+
+    .navbar {
+      width: 100%;
+      background-color: #111;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 1rem 2rem;
+      box-sizing: border-box;
+      flex-wrap: wrap;
+      position: relative;
+      z-index: 1000;
+    }
+
+    .nav-logo {
+      height: 40px;
+      cursor: pointer;
+      flex-shrink: 0;
+    }
+
+    .nav-links {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1.5rem;
+      align-items: center;
+      justify-content: flex-end;
+      flex-grow: 1;
+    }
+
+    .nav-links a {
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+      text-transform: uppercase;
+      font-size: 1rem;
+      transition: color 0.3s;
+      white-space: nowrap;
+    }
+
+    .nav-links a:hover {
+      color: #ccc;
+    }
+
+    .hamburger {
+      display: none;
+      flex-direction: column;
+      cursor: pointer;
+      gap: 5px;
+    }
+
+    .hamburger div {
+      width: 25px;
+      height: 3px;
+      background-color: white;
+    }
+
+    @media (max-width: 768px) {
+      .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+
+      .nav-links {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        margin-top: 1rem;
+      }
+
+      .nav-links.active {
+        display: flex;
+      }
+
+      .hamburger {
+        display: flex;
+      }
+    }
+
+    /* Styles für den Hauptinhalt / Text */
+    .main-content {
+      flex: 1;
+      width: 100%;
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 2rem 1.5rem 4rem 1.5rem;
+      box-sizing: border-box;
+      line-height: 1.6;
+    }
+
+    .main-content h2 {
+      font-size: 1.8rem;
+      color: #fff;
+      margin-top: 0;
+      margin-bottom: 1.5rem;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+    }
+
+    .main-content h3 {
+      font-size: 1.3rem;
+      margin-top: 1.5rem;
+      margin-bottom: 0.5rem;
+      color: #fff;
+    }
+
+    .main-content p {
+      font-size: 1.1rem;
+      margin-bottom: 1rem;
+      color: #ddd;
+    }
+
+    .main-content p.bold-text {
+      font-weight: bold;
+      color: #fff;
+    }
+
+    .main-content a {
+      color: #dc2626;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    .main-content a:hover {
+      text-decoration: underline;
+    }
+
+    /* Bild innerhalb des Inhalts */
+    .content-image {
+      width: 100%;
+      margin-top: 2rem;
+      border-radius: 8px;
+      display: block;
+    }
+  </style>
+</head>
+<body>
+
+  <nav class="navbar">
+    <a href="/">
+      <img src="logo.png" alt="FC Kiischpelt Logo" class="nav-logo" />
+    </a>
+    <div class="hamburger" onclick="toggleMenu()">
+      <div></div>
+      <div></div>
+      <div></div>
+    </div>
+    <div class="nav-links" id="navLinks" aria-label="Hauptnavigation">
+      <a href="/">Home</a>
+      <a href="/dauerkaart">Dauerkaart</a>
+      <a href="/matchball">Matchball</a>
+      <a href="https://fckw.lu/veräin">Veräin</a>
+      <a href="https://fckw.lu/spillplang">Spillplang</a>
+      <a href="/sponsoren">Sponsoren</a>
+      <a href="/fanspecial">12% FanSpecial</a>
+      <a href="/socialmedia">Social Media</a>
+    </div>
+  </nav>
+
+  <main class="main-content">
+    <h2>MATCHBALL FC KIISCHPELT - SAISON 2026 2027</h2>
+
+    <h3>Wat heescht dat genau?</h3>
+    <p>Dir maacht virum Match eng Foto zesumme mat de Kapitäne vun de béiden Equipe an dem Arbitter.</p>
+    <p>Dir selwer oder eng Persoun déi dir decidéiert mécht den Ustouss virum Heemmatch vum FC KIISCHPELT.</p>
+
+    <p class="bold-text">1 Matchball = 100 € - Domat ënnerstëtzt dir eis als Veräin souwéi eisen Challenge an der 2. Divisioun.</p>
+
+    <p>Mëllt iech per Facebook / Instagram oder bei engem Member vum FC KIISCHPELT.</p>
+
+    <p>De Spillplang fannt dir an der Rubrik <a href="https://fckw.lu/spillplang">SPILLPLANG</a>.</p>
+
+    <p>Follgend Matchbäll sinn net méi disponibel: Matchday 1 - 10</p>
+
+    <!-- Bild innerhalb von main-content, gleicher Breite wie der Text -->
+    <img src="https://github.com/user-attachments/assets/49306edc-bd73-4a8f-aa12-44ee020d2898" alt="MATCHBALL FC POST FINAL 2627" class="content-image" />
+  </main>
+
+  <script>
+    function toggleMenu() {
+      const nav = document.getElementById('navLinks');
+      nav.classList.toggle('active');
+    }
+  </script>
+
+</body>
+</html>
