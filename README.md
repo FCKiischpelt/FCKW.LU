@@ -7,6 +7,8 @@ PLATIN
 <img width="447" height="447" alt="Garage Jacoby" src="https://github.com/user-attachments/assets/84ab2e85-b432-4c21-ba12-9ce87a0848e6" />
 <img width="554" height="551" alt="Zenner Sven" src="https://github.com/user-attachments/assets/94e0dbdd-2f5f-4c12-94cc-c4669e57c57c" />
 <img width="2125" height="1725" alt="Logo agence Henri Braun et Associés-vecto" src="https://github.com/user-attachments/assets/e380e8e4-4b7f-464f-a6e2-385618f2784c" />
+<img width="6560" height="2110" alt="jacobyLOGO" src="https://github.com/user-attachments/assets/0d2da4b7-99de-4333-8cfa-c59c3838ef49" />
+
 
 
 GOLD
@@ -34,6 +36,12 @@ BRONZE
   />
 <img width="300" height="300" alt="Neser Reuter" src="https://github.com/user-attachments/assets/2d47ccbd-94d3-403c-a0ae-c784bc2d9e93" />
 <img width="872" height="362" alt="Jans" src="https://github.com/user-attachments/assets/3f41d12b-8743-4efe-8d1d-45ef3b5870c8" />
+<img width="1957" height="500" alt="Logo Verband" src="https://github.com/user-attachments/assets/027ed5d5-eee6-46bb-8820-6dd2cf662f42" />
+<img width="851" height="315" alt="Logo Manternach" src="https://github.com/user-attachments/assets/0b33d898-004c-4a54-b2e3-94baa1e3d66b" />
+<img width="2810" height="868" alt="Logo THIEX" src="https://github.com/user-attachments/assets/61ad7761-17e0-4820-a368-56855e227704" />
+
+
+
 
 Matchball 26/27
 <img width="225" height="225" alt="Matchball 2627" src="https://github.com/user-attachments/assets/94f0d75f-061d-4af9-b781-46c68c60a3de" />
