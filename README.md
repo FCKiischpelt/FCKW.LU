@@ -56,3 +56,7 @@ Social Media
 <img width="1024" height="1024" alt="Logo Facebook" src="https://github.com/user-attachments/assets/6a78bdd9-c92c-4b83-836f-5684d91a7dd0" />
 <img width="512" height="512" alt="Logo Instagram" src="https://github.com/user-attachments/assets/066c5bc2-d80f-4a8d-81d0-00d84f19f6d8" />
 
+FanSpecial
+<img width="1055" height="1491" alt="Valdor_FCKW_flyer_zonder_extra_regel_A4" src="https://github.com/user-attachments/assets/85310f93-bf9f-4eda-b972-07826e673c52" />
+
+
